@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Energy Calibration}{2}{0}{1}
+\beamer@sectionintoc {2}{Neutrino Directionality}{8}{0}{2}
