@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2">
+ <manifest:file-entry manifest:full-path="/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.presentation"/>
+ <manifest:file-entry manifest:full-path="Thumbnails/thumbnail.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="meta.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000181C7FB4C37.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000001814F563066.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000002380000022169EC0697.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000221411856CA.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000181D1A60381.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000002380000022147EF9875.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000002219EA0D8F3.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000221D79F0A9E.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000221E449BDE8.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000001090000016B40B39C60.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000002219A57F33C.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000001090000016B218998DA.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000002214272D9C9.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000001F4000002B40502E730.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000221CF9064F3.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000181990FE260.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000002380000022115552447.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000001811FE080BF.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000002380000016F38025979.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000221DEA671B8.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000002216D2FB977.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/200000020000023800000181523DD365.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/2000000200000238000002217472C627.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000001F4000002B44FCAD712.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Pictures/20000002000002380000016F4C15C948.eps" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Configurations2/accelerator/current.xml" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
+</manifest:manifest>

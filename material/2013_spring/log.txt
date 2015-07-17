@@ -1,0 +1,205 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./high_energy_event_imaging_2013_spring.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf/tex/latex/beamer/base/beamer.cls
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty)
+Document Class: beamer 2007/03/11 cvs version 3.07 A class for typesetting pres
+entations (rcs-revision 1.70)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasemodes.sty
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasedecode.sty))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoptions.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty)
+(/etc/texmf/tex/latex/config/graphics.cfg)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def)))
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+(/etc/texmf/tex/latex/config/color.cfg))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathtrig.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathrnd.code.tex))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathbase.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)))
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfbaseimage.sty
+
+Package pgf Warning: This package is obsolete and no longer needed on input lin
+e 13.
+
+) (/usr/share/texmf/tex/latex/pgf/utilities/xxcolor.sty)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty))
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty))
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty))
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty))
+Implicit mode OFF; no redefinition of LaTeX internals
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty))))
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty)
+
+Package hyperref Warning: Option `pdfpagelabels' is turned off
+(hyperref)                because \thepage is undefined.
+
+Hyperref stopped early
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def)
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasecompatibility.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasefont.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasemisc.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetwoscreens.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoverlay.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetitle.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasesection.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframe.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframesize.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframecomponents.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasecolor.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasenotes.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetoc.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetemplates.sty
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseauxtemplates.sty
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseboxes.sty)))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
+(/usr/share/texmf-texlive/tex/latex/tools/enumerate.sty))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
+(/usr/share/texmf-texlive/tex/latex/translator/translator.sty
+(/usr/share/texmf-texlive/tex/latex/translator/translator-language-mappings.tex
+)) (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasethemes.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/theme/beamerthemedefault.sty
+(/usr/share/texmf/tex/latex/beamer/themes/font/beamerfontthemedefault.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/color/beamercolorthemedefault.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/inner/beamerinnerthemedefault.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/outer/beamerouterthemedefault.sty)))
+(/usr/share/texmf/tex/latex/beamer/themes/theme/beamerthemeCambridgeUS.sty
+(/usr/share/texmf/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/outer/beamerouterthemeinfolines.sty)
+(/usr/share/texmf/tex/latex/beamer/themes/color/beamercolorthemebeaver.sty))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def))
+(/usr/share/texmf/tex/latex/beamer/themes/font/beamerfontthemeprofessionalfonts
+.sty) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex))) (/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.code.tex
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.geometric.code.tex
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.misc.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.misc.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.symbols.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.symbols.code.tex))
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.arrows.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.arrows.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.callouts.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.callouts.code.tex)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.multipart.code.tex
+))) (./high_energy_event_imaging_2013_spring.aux)
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty))
+(./high_energy_event_imaging_2013_spring.out)
+(./high_energy_event_imaging_2013_spring.out)
+(/usr/share/texmf-texlive/tex/latex/translator/translator-theorem-dictionary-En
+glish.dict) (./high_energy_event_imaging_2013_spring.nav) [1{/var/lib/texmf/fon
+ts/map/pdftex/updmap/pdftex.map}] [2]
+<material/high_energy_event_candidates_sanshiro.png, id=74, 720.6925pt x 544.03
+25pt> <use material/high_energy_event_candidates_sanshiro.png>
+Overfull \vbox (18.74942pt too high) detected at line 44
+[3 <./material/high_energy_event_candidates_sanshiro.png (PNG copy)>]
+(./high_energy_event_imaging_2013_spring.aux) )
+(see the transcript file for additional information){/usr/share/texmf-texlive/f
+onts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/urw/helvetic/u
+hvr8a.pfb>
+Output written on high_energy_event_imaging_2013_spring.pdf (3 pages, 138104 by
+tes).
+Transcript written on high_energy_event_imaging_2013_spring.log.

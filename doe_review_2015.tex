@@ -91,6 +91,7 @@
 \usepackage{tikz}
 \usepackage{feynmp-auto}
 \usepackage{hepnames}
+\usepackage{mhchem}
 
 \graphicspath{{figures/}}
 
@@ -292,31 +293,31 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %		\end{block}
 %	\end{columns}
 %\end{frame}
-
-\begin{frame}{Many photons at high energy in scintillator}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Cosmic ray $\mu$}}
-			\includegraphics[width=\linewidth]{through_going_muon.pdf}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{204 $\mu$'s overlaid}}
-			\begin{tikzpicture}
-				\node (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
-				\pause
-				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
-			\end{tikzpicture}
-			\begin{itemize}
-				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Prepulsing is few
-					\si{\percent} effect.}}
-				\item<4-> {\fontsize{10pt}{10pt}\selectfont{fitters must to be
-					robust against these statistical outliers}}
-			\end{itemize}
-		\end{block}
-	\end{columns}
-\end{frame}
+%
+%\begin{frame}{Many photons at high energy in scintillator}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Cosmic ray $\mu$}}
+%			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{204 $\mu$'s overlaid}}
+%			\begin{tikzpicture}
+%				\node (img1)
+%				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
+%				\pause
+%				\node (img2) at (img1)
+%				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
+%			\end{tikzpicture}
+%			\begin{itemize}
+%				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Prepulsing is few
+%					\si{\percent} effect.}}
+%				\item<4-> {\fontsize{10pt}{10pt}\selectfont{fitters must to be
+%					robust against these statistical outliers}}
+%			\end{itemize}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
 %
 %\begin{frame}{Problems are...}
 %	\begin{itemize}
@@ -424,10 +425,109 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %			for \emph{\color{blue}center of time}.
 %	\end{itemize}
 %\end{frame}
+%
+%\begin{frame}{Test algorithm against $\mu$ (Data)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Cosmic ray $\mu$}}
+%			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Deviation from $\mu$-fitter}}
+%			\includegraphics[width=\linewidth]{analyzed_rtq_run005000_agreementWithMuonFitter_t0Peak_prepulseCut1_0_05maxQThres_1000evts.pdf}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against $\Pnu$ (MC)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		%\begin{block}{CC $\Pnue$ interaction on \ce{^1H}}
+%		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} +}}}
+%			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} +}}}
+%			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
+%		\end{block}
+%	\end{columns}
+%	\begin{itemize}
+%		\item Black line: \SI{1}{\sigma} of reconstructed angle from \Pnu
+%			direction
+%		\item Red line: \SI{1}{\sigma} of lepton angle from \Pnu direction
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against T2K events (Data)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\includegraphics[width=\linewidth]{t2k.jpeg}
+%		\column{0.5\linewidth}
+%		\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against T2K events (Data)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\includegraphics[width=\linewidth]{t2k.jpeg}
+%		\column{0.5\linewidth}
+%		\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
+%	\end{columns}
+%\end{frame}
 
-\begin{frame}{Validate against real muons}
+\begin{frame}
+	\centering
+	Track Reconstruction and Particle ID
 \end{frame}
 
+\begin{frame}{Hellgartner's algorithm}
+	\begin{equation*}
+		h(\vec{x}, t) = \sum_{i=1}^{N_{\text{PMT}}}
+		\Theta(q_i - q_{\text{threshold}})
+		\sum_{j=1}^{N_{\gamma}} f(t_{ij} - t_{i}^{\text{TOF}}, t) \,
+	\end{equation*}
+	{\footnotesize
+		where
+		$N_{\text{PMT}}$: number of PMTs\\
+		$N_{\gamma}$: number of photon hits to count per PMT\\
+		$q_i$: charge on $i$-th PMT, $q_{\text{threshold}}$: minimum charge for
+		analysis\\
+		$t_{ij}$: $j$-th hit time on $i$-th PMT\\
+		$t_i^{\text{TOF}}$: expected time-of-flight between $i$-th PMT and
+		$\vec{x}$
+	}
+	\begin{equation*}
+		f(\Delta t, t) \propto (t - \Delta t) \exp{\bigg[-\frac{(\Delta t -
+		t)^2}{2 \sigma_{\text{tts}}}\bigg]}
+	\end{equation*}
+	\begin{equation*}
+		\text{{\normalsize\textbf{\underline{Figure of merit}}} {\footnotesize
+		for each test point in space}} = \int_{-\infty}^{\infty} |h(\vec{x}, t)|^2 \,\mathrm{d}t
+	\end{equation*}
+\end{frame}
 
+\begin{frame}{\normalsize Test Hellgartner on double
+	$\SI{1}{\giga\electronvolt}$ muons (MC)}
+	\includegraphics[width=\linewidth]{hellgartner_double_muon.pdf}
+
+	{\footnotesize Dominikus Hellgartner}
+\end{frame}
+
+\begin{frame}{Test Hellgartner on
+	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
+	\centering
+	\includegraphics[width=0.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
+\end{frame}
+
+\begin{frame}{Test Hellgartner on T2K events (Data)}
+	\centering
+	\includegraphics[width=0.8\linewidth]{fom_map__run11331_evt29962767.pdf}
+\end{frame}
+
+\begin{frame}{Lepton flavor discrimination}
+	\centering
+	\includegraphics[width=0.8\linewidth]{emu_mtq_recon_ellipticity-3Mcut.pdf}
+\end{frame}
 
 \end{document} 
