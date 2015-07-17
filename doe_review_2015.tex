@@ -164,10 +164,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %		\begin{block}{}
 %			\begin{tikzpicture}
 %				\node (img1)
-%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring.png}}
+%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring.png}};
 %				\pause
 %				\node (img2) at (img1)
-%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton.png}}
+%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton.png}};
 %			\end{tikzpicture}
 %		\end{block}
 %		\column{0.5\linewidth}
@@ -189,10 +189,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %			\begin{block}{}
 %				\begin{tikzpicture}
 %					\node (img1)
-%					{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-detector.pdf}}
+%					{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-detector.pdf}};
 %					\pause
 %					\node (img2) at (img1)
-%					{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-lepton_track.pdf}}
+%					{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-lepton_track.pdf}};
 %					\pause
 %					\node (img3) at (img1)
 %					{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-cherenkov.pdf}}
@@ -292,6 +292,31 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %		\end{block}
 %	\end{columns}
 %\end{frame}
+
+\begin{frame}{Many photons at high energy in scintillator}
+	\begin{columns}[T]
+		\column{0.5\linewidth}
+		\begin{block}{\centering{Cosmic ray $\mu$}}
+			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+		\end{block}
+		\column{0.5\linewidth}
+		\begin{block}{\centering{204 $\mu$'s overlaid}}
+			\begin{tikzpicture}
+				\node (img1)
+				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
+				\pause
+				\node (img2) at (img1)
+				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
+			\end{tikzpicture}
+			\begin{itemize}
+				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Prepulsing is few
+					\si{\percent} effect.}}
+				\item<4-> {\fontsize{10pt}{10pt}\selectfont{fitters must to be
+					robust against these statistical outliers}}
+			\end{itemize}
+		\end{block}
+	\end{columns}
+\end{frame}
 %
 %\begin{frame}{Problems are...}
 %	\begin{itemize}
@@ -317,13 +342,13 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %		\begin{block}{}
 %			\begin{tikzpicture}
 %				\node (img1)
-%				{\includegraphics[width=\linewidth]{center_of_charge_and_time.pdf}}
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time.pdf}};
 %				\pause
 %				\node (img2) at (img1)
-%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_charge.pdf}}
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_charge.pdf}};
 %				\pause
 %				\node (img3) at (img1)
-%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_time.pdf}}
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_time.pdf}};
 %			\end{tikzpicture}
 %		\end{block}
 %		\column{0.5\linewidth}
