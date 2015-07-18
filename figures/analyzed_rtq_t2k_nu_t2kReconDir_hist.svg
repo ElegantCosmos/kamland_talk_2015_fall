@@ -19,7 +19,7 @@
    sodipodi:docname="analyzed_rtq_t2k_nu_t2kReconDir_hist.svg"><metadata
      id="metadata5006"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs5004" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,9 +37,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4323529"
-     inkscape:cx="301.38637"
-     inkscape:cy="291.36933"
+     inkscape:zoom="1.3676216"
+     inkscape:cx="250.20495"
+     inkscape:cy="311.24255"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="1"
@@ -80,10 +80,6 @@
        id="path5028"
        style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 113.5,108.75 340,0 0,326.5 -340,0 0,-326.5 z" /><path
-       inkscape:connector-curvature="0"
-       id="path5030"
-       style="fill:none;stroke:#0000ff;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 114.25,109.75 0,76.75 33.25,0 0,77.75 34,0 0,77.75 34,0 0,-232.25 102,0 0,310 68,0 0,-310 68,0" /><path
        inkscape:connector-curvature="0"
        id="path5032"
        style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
@@ -269,11 +265,11 @@
        d="m 443.25,419.75 10.25,0" /><path
        inkscape:connector-curvature="0"
        id="path5132"
-       style="fill:none;stroke:#ff0000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 114.25,109.75 33.25,0 0,154.5 34,0 0,-154.5 34,0 0,76.75 102,0 0,77.75 34,0 0,-77.75 34,0 0,77.75 34,0 0,155.5 34,0" /><path
        inkscape:connector-curvature="0"
        id="path5134"
-       style="fill:none;stroke:#ff0000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
        d="m 114.25,109.75 0,33 33.25,0 0,2.5 34,0 0,11.5 34,0 0,16 34,0 0,13.25 34,0 0,16.75 34,0 0,28.75 34,0 0,36.5 34,0 0,62.75 34,0 0,8.5 34,0" /><path
        inkscape:connector-curvature="0"
        id="path5136"
@@ -295,7 +291,8 @@
        id="path5144"
        style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        d="m 124.75,424.5 0,-54.5" /><g
-       id="g5146"><text
+       id="g5146"
+       transform="translate(0,-6.4)"><text
          id="text5148"
          style="font-variant:normal;font-weight:bold;font-size:8.56099987px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="matrix(1,0,0,-1,152.196,411.88)"><tspan
@@ -306,22 +303,10 @@
 </g><path
        inkscape:connector-curvature="0"
        id="path5152"
-       style="fill:none;stroke:#ff0000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 129,415.25 19.75,0" /><g
-       id="g5154"><text
-         id="text5156"
-         style="font-variant:normal;font-weight:bold;font-size:8.56099987px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         transform="matrix(1,0,0,-1,152.196,393.807)"><tspan
-           id="tspan5158"
-           sodipodi:role="line"
-           y="0"
-           x="0 7.1313128 12.362084 17.592855 22.823626 25.203585 30.434355 32.814312 35.665127 38.515938 43.275856">Muon Fitter</tspan></text>
-</g><path
-       inkscape:connector-curvature="0"
-       id="path5160"
-       style="fill:none;stroke:#0000ff;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 129,397.25 19.75,0" /><g
-       id="g5162"><text
+       style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 129,408.85 19.75,0" /><g
+       id="g5162"
+       transform="translate(0,6.4)"><text
          id="text5164"
          style="font-variant:normal;font-weight:bold;font-size:8.56099987px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="matrix(1,0,0,-1,152.196,376.685)"><tspan
@@ -332,5 +317,5 @@
 </g><path
        inkscape:connector-curvature="0"
        id="path5168"
-       style="fill:none;stroke:#ff0000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 129,379 19.75,0" /></g></svg>
+       style="fill:none;stroke:#000000;stroke-width:2.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 129,385.4 19.75,0" /></g></svg>

@@ -136,9 +136,13 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}[t]{KamLAND: $\nu$ detector in Japan}
 	\centering
-	\begin{figure}
-		\includegraphics[width=\linewidth]{kamland_tunnel.pdf}
-	\end{figure}
+	\begin{tikzpicture}
+		\node (img1)
+		{\includegraphics[width=\linewidth]{kamland_tunnel.pdf}};
+		\pause
+		\node (img2) at (img1)
+		{\includegraphics[width=\linewidth]{kamland_tunnel-kl_and_sk.pdf}};
+	\end{tikzpicture}
 \end{frame}
 
 \section{Introduction}
@@ -147,9 +151,12 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\item<1-> Commissioned: \num{2001}
 		\item<1-> Detector medium: liquid scintillator
 		\item<1-> Size: \SI{1}{\kilo\tonne}
-		\item<1-> Photomultiplier tubes:\\
-			\num{1325} 17-inch, \num{779} 20-inch
-			(Hamamatsu), \SI{34}{\percent} photo-coverage
+		\item<1-> Photomultiplier tubes (Hamamatsu):\\
+			\begin{itemize}
+				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time
+				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time
+				\item \SI{34}{\percent} photo-coverage
+			\end{itemize}
 		\item<1-> Analysis $\nu$ energy: $\sim\si{\mega\electronvolt}$
 		\item<1-> Energy resolution: \SI{7.0\pm0.1}{\percent}
 		\item<1-> Vertex resolution:
@@ -168,17 +175,17 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\begin{block}{\centering{Super-Kamiokande}}
 			\begin{tikzpicture}
 				\node (img1)
-				{\includegraphics[width=\linewidth]{sk_cherenkov_ring.png}};
+				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-ring.png}};
 				\pause
 				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton.png}};
+				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-lepton.png}};
 			\end{tikzpicture}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{}
 			\begin{itemize}
-				\item<1-> Cherenkov rings
-				\item<2-> Tell charged particle direction
+				\item<1-> Cherenkov ring
+				\item<2-> shows charged particle direction
 				\item<3-> {\color{blue}Can we do something similar in
 					scintillator?}
 			\end{itemize}
@@ -209,7 +216,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\begin{block}{}
 			\begin{itemize}
 				\item<3-> Cherenkov is emitted
-				\item<4-> Along with isotropic Scintillation
+				\item<4-> Along with isotropic scintillation
 				\item<5-> {\color{red}$\implies$ Cannot simply use Cherenkov
 					for directionality}
 			\end{itemize}
@@ -239,7 +246,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			\begin{itemize}
 				\item<2-> KamLAND is used to seeing simple kinematics at low
 					energies (\si{\mega\electronvolt})
-				\item<3-> single final-state lepton
+				\item<3-> Single final-state lepton
 			\end{itemize}
 		\end{block}
 	\end{columns}
@@ -285,11 +292,11 @@ University of Hawaii, Manoa \\ % Your institution for the title page
                 \fmflabel{\Pmuon}{o3}
                 \fmf{boson,label=\PWplus}{v2,v3}
                 \fmffreeze
-                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(-0.5,+2))}
-                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(+0.5,-2))}
+                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(-0.6,+2))}
+                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(+0.6,-2))}
                 \fmffreeze
-                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(+0.25,+1))}
-                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(-0.25,-1))}
+                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(+0.3,+1))}
+                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(-0.3,-1))}
                 \fmfblob{1cm}{v1}
 			\end{fmfgraph*} \end{fmffile}
 		\end{block}
@@ -303,7 +310,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			\includegraphics[width=\linewidth]{through_going_muon.pdf}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering{204 $\mu$'s overlaid}}
+		\begin{block}{\centering{Hit time vs angle}}
 			\begin{tikzpicture}
 				\node (img1)
 				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
@@ -311,35 +318,41 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 				\node (img2) at (img1)
 				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
 			\end{tikzpicture}
+			\vspace{-20}
 			\begin{itemize}
-				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Prepulsing is few
-					\si{\percent} effect.}}
-				\item<4-> {\fontsize{10pt}{10pt}\selectfont{fitters must to be
+				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
 					robust against these statistical outliers}}
+				\item<4-> {\fontsize{10pt}{10pt}\selectfont{Or we can just use
+					\textbf{LAPPD}s!}}
 			\end{itemize}
 		\end{block}
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Problems are...}
+\begin{frame}{There are many problems...}
 	\begin{itemize}
-		\item<1-> Light is produced isotropically
-		\item<2-> At high energies
+		\item<1-> Light is emitted isotropically
+		\item<2-> At high energies:
 		\begin{itemize}
-			\item<2-> complicated kinematics
-			\item<2-> multiple final-state particles
+			\item<3-> complicated kinematics
+			\item<3-> multiple final-state particles
 		\end{itemize}
-	\item<3-> {\color{blue}Let's change perspective and think more simple}
-	\item<4-> {\color{blue}There are two pieces of information arriving at PMTs}
+		\item<4-> Many photons $\implies$ pre-pulsing
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Let's change perspective and\\think more simple}
+	\begin{itemize}
+		\item<2-> There are two pieces of information arriving at PMTs
 		\begin{itemize}
-			\item<5-> {\color{blue}Time}
-			\item<5-> {\color{blue}Charge}
+			\item<3-> {\color{magenta}Charge}
+			\item<3-> {\color{blue}Time}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \subsection{Idea}
-\begin{frame}{Fit direction with charge and time}
+\begin{frame}{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
 	\centering
 	\begin{columns}[T]
 		\column{0.5\linewidth}
@@ -359,8 +372,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\begin{itemize}
 			\item<2-> Use {\color{magenta}center of charge} to fit middle of
 				track
-			\item<3-> Use {\color{blue}center of time} to fit near one end of
-				track
+			\item<3-> Use {\color{blue}center of time} to fit near end of track
 			\item<4-> And just connect dots to find direction!
 		\end{itemize}
 	\end{columns}
@@ -372,13 +384,16 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 				But, what do we use for the \underline{weights} in the
 				\textbf{weighted~mean}:
 				\begin{equation*}
-					\frac{\sum_{i}w_{i}x_{i}}{\sum_{i}w_{i}}\,,
+					\frac{\sum_{i} w_{i}x_{i}}{\sum_{i} w_{i}}
 				\end{equation*}
 				when calculating center of {\color{magenta}\underline{charge}} and
 				{\color{blue}\underline{time}}?
 			}
-		\item<3-> Let's review some basic physics
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Let's review some basic physics...}
+	
 \end{frame}
 
 \begin{frame}{What weight is used for \emph{center of gravity}?}
@@ -386,8 +401,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{itemize}
 		\item[]<2-> To find center of gravity:
 		\item[]<2-> net torque $= -(m_1 g) l_1 + (m_2 g) l_2 = 0$
-		\item[]<3-> $\implies -m_1 l_1 + m_2 l_2 = 0$
-		\item[]<4-> $\therefore$ weight is mass: $w_{i} = m_{i}$
+		\item[]<3-> $\implies -(m_1) l_1 + (m_2) l_2 = 0$
+		\item[]<4-> $\therefore$ weight is \textbf{mass}: $w_{i} = m_{i}$
 	\end{itemize}
 \end{frame}
 
@@ -398,9 +413,9 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			\frac{1}{l_2^2}$
 		\item[]<3-> $\implies \sqrt{q_1} \propto \frac{1}{l_1}, \quad \sqrt{q_2}
 			\propto \frac{1}{l_2}$
-		\item[]<4-> $\implies -\sqrt{q_1}{l_1} + \sqrt{q_2}{l_2} = 0$
-		\item[]<5-> $\therefore$ weight is square root of charge: $w_{i} =
-			\sqrt{q_{i}}$
+		\item[]<4-> $\implies -(\sqrt{q_1}){l_1} + (\sqrt{q_2}){l_2} = 0$
+		\item[]<5-> $\therefore$ weight is \textbf{$\sqrt{\text{charge}}$}:
+			$w_{i} = \sqrt{q_{i}}$
 	\end{itemize}
 \end{frame}
 
@@ -414,7 +429,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			(\frac{1}{\Delta t_2})\frac{l_2}{c} = 0$
 		\item[]<4-> $\implies -(\frac{1}{\Delta t_1})l_1 +
 			(\frac{1}{\Delta t_2})l_2 = 0$
-		\item[]<5-> $\therefore$ weight is inverse of time: $w_{i} =
+		\item[]<5-> $\therefore$ weight is \textbf{inverse of time}: $w_{i} =
 			\frac{1}{\Delta t_{i}}$
 	\end{itemize}
 \end{frame}
@@ -434,24 +449,28 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
+			\vspace{5}
 			\includegraphics[width=\linewidth]{through_going_muon.pdf}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering{Deviation from $\mu$-fitter}}
+		\begin{block}{\centering{{\fontsize{10pt}{10pt}\selectfont{Agreement
+			with $\mu$-fitter\\which uses\\entry/exit points\\~}}}}
 			\includegraphics[width=\linewidth]{analyzed_rtq_run005000_agreementWithMuonFitter_t0Peak_prepulseCut1_0_05maxQThres_1000evts.pdf}
 		\end{block}
 	\end{columns}
 \end{frame}
 
 \begin{frame}{Test algorithm against $\Pnu$ (MC)}
+	\vspace{-10}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
-		%\begin{block}{CC $\Pnue$ interaction on \ce{^1H}}
 		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} +}}}
+			\vspace{10}
 			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} +}}}
+			\vspace{10}
 			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
 	\end{columns}
@@ -463,20 +482,36 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}{Test algorithm against T2K events (Data)}
+	{\small(Selected with spill-time so no backgrounds)}
+	\vspace{-10}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
-		\includegraphics[width=\linewidth]{t2k.jpeg}
+		\begin{block}{\centering\small{Map}}
+			\vspace{10}
+			\includegraphics[width=\linewidth]{t2k.jpeg}
+		\end{block}
 		\column{0.5\linewidth}
-		\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
+		\begin{block}{\centering{\small{Agreement with J-PARC direction}}}
+			\vspace{10}
+			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
+		\end{block}
 	\end{columns}
 \end{frame}
 
 \begin{frame}{Test algorithm against T2K events (Data)}
+	{\small(Selected with spill-time so no backgrounds)}
+	\vspace{-10}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
-		\includegraphics[width=\linewidth]{t2k.jpeg}
+		\begin{block}{\centering\small{Map}}
+			\vspace{10}
+			\includegraphics[width=\linewidth]{t2k.jpeg}
+		\end{block}
 		\column{0.5\linewidth}
-		\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
+		\begin{block}{\centering\small{Agreement with MC}}
+			\vspace{10}
+			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
+		\end{block}
 	\end{columns}
 \end{frame}
 
@@ -488,6 +523,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \subsection{Algorithm}
 \begin{frame}{Hellgartner's algorithm}
+	{(former LENA grad student)}
 	\begin{equation*}
 		h(\vec{x}, t) = \sum_{i=1}^{N_{\text{PMT}}}
 		\Theta(q_i - q_{\text{threshold}})

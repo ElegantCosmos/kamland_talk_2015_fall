@@ -30,9 +30,9 @@
      inkscape:window-height="1161"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="1.0534199"
-     inkscape:cx="496.14905"
-     inkscape:cy="428.80427"
+     inkscape:zoom="1.0068263"
+     inkscape:cx="440.7198"
+     inkscape:cy="486.89016"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="1"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,7 +62,7 @@
       <path
          id="path5095"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#ff00ff;stroke-width:1pt;stroke-opacity:1;fill:#ff00ff;fill-opacity:1"
          transform="scale(0.4)" />
     </marker>
     <marker
@@ -91,7 +91,7 @@
          inkscape:connector-curvature="0"
          id="path5095-1"
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#ff00ff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.4,0.4)" />
     </marker>
   </defs>
@@ -99,7 +99,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1"
-     style="display:none">
+     style="display:inline">
     <image
        width="923"
        height="869"
@@ -115,7 +115,7 @@
      inkscape:label="Layer 2"
      style="display:inline">
     <g
-       id="g6009">
+       id="g4250">
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -154,13 +154,37 @@
          inkscape:connector-curvature="0"
          id="path5091"
          d="M 646.46587,508.27015 428.12938,327.90522"
-         style="fill:#0000ff;fill-rule:evenodd;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:40,10;marker-end:url(#marker5093);stroke-dashoffset:0" />
+         style="fill:#ff00ff;fill-rule:evenodd;stroke:#ff00ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:40, 10;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker5093)" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path5091-0"
          d="M 645.25408,532.5837 393.69247,630.36047"
-         style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:40, 10;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker5093-8)" />
-    </g>
+         style="display:inline;fill:#ff00ff;fill-rule:evenodd;stroke:#ff00ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:40, 10;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker5093-8)" />
+      <flowRoot
+         transform="matrix(0.76849592,0.63985468,-0.63985468,0.76849592,703.24012,262.91716)"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4234"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4236"><rect
+             y="164.80705"
+             x="-146.99655"
+             height="51.647449"
+             width="248.30499"
+             id="rect4238" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:Sans;-inkscape-font-specification:'Sans Bold';fill:#ff00ff"
+           id="flowPara4240">Cherenkov</flowPara></flowRoot>      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4242"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         transform="matrix(0.9285674,-0.37116382,0.37116382,0.9285674,489.36851,418.83988)"><flowRegion
+           id="flowRegion4244"><rect
+             id="rect4246"
+             width="248.30499"
+             height="51.647449"
+             x="-146.99655"
+             y="164.80705" /></flowRegion><flowPara
+           id="flowPara4248"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:Sans;-inkscape-font-specification:'Sans Bold';fill:#ff00ff">Cherenkov</flowPara></flowRoot>    </g>
   </g>
 </svg>
