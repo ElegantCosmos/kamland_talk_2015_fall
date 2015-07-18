@@ -149,15 +149,21 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}[t]{KamLAND: features}
 	\begin{itemize}
 		\item<1-> Commissioned: \num{2001}
-		\item<1-> Detector medium: liquid scintillator
+		\item<1-> Medium: liquid scintillator
+			\begin{itemize}
+				\item<1-> Decay constants: $\tau_1 = \SI{4.0}{\nano\second}$, $\tau_2 = \SI{8.6}{\nano\second}$
+			\end{itemize}
 		\item<1-> Size: \SI{1}{\kilo\tonne}
 		\item<1-> Photomultiplier tubes (Hamamatsu):\\
 			\begin{itemize}
-				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time
-				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time
+				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time,
+					\SI{3.5}{\nano\second} TTS
+				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time,
+					\SI{5.5}{\nano\second} TTS
 				\item \SI{34}{\percent} photo-coverage
 			\end{itemize}
-		\item<1-> Analysis $\nu$ energy: $\sim\si{\mega\electronvolt}$
+		\item<1-> Analysis: $\sim\si{\mega\electronvolt}$ \APnue
+			(inverse-beta decay)
 		\item<1-> Energy resolution: \SI{7.0\pm0.1}{\percent}
 		\item<1-> Vertex resolution:
 			\SI{13.8\pm2.3}{\centi\meter\per\sqrt{E(\mega\electronvolt)}}
@@ -318,7 +324,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 				\node (img2) at (img1)
 				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
 			\end{tikzpicture}
-			\vspace{-20}
+			\vspace{-20mm}
 			\begin{itemize}
 				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
 					robust against these statistical outliers}}
@@ -449,7 +455,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
-			\vspace{5}
+			\vspace{5mm}
 			\includegraphics[width=\linewidth]{through_going_muon.pdf}
 		\end{block}
 		\column{0.5\linewidth}
@@ -461,16 +467,16 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}{Test algorithm against $\Pnu$ (MC)}
-	\vspace{-10}
+	\vspace{-10mm}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} +}}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} +}}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
 	\end{columns}
@@ -483,16 +489,15 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{Test algorithm against T2K events (Data)}
 	{\small(Selected with spill-time so no backgrounds)}
-	\vspace{-10}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small{Map}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{t2k.jpeg}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\small{Agreement with J-PARC direction}}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
 		\end{block}
 	\end{columns}
@@ -500,16 +505,15 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{Test algorithm against T2K events (Data)}
 	{\small(Selected with spill-time so no backgrounds)}
-	\vspace{-10}
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small{Map}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{t2k.jpeg}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small{Agreement with MC}}
-			\vspace{10}
+			\vspace{10mm}
 			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
 		\end{block}
 	\end{columns}
