@@ -134,442 +134,445 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-\begin{frame}[t]{KamLAND: $\nu$ detector in Japan}
+%\begin{frame}[t]{KamLAND: $\nu$ detector in Japan}
+%	\centering
+%	\begin{tikzpicture}
+%		\node (img1)
+%		{\includegraphics[width=\linewidth]{kamland_tunnel.pdf}};
+%		\pause
+%		\node (img2) at (img1)
+%		{\includegraphics[width=\linewidth]{kamland_tunnel-kl_and_sk.pdf}};
+%	\end{tikzpicture}
+%\end{frame}
+%
+%\section{Introduction}
+%\begin{frame}[t]{KamLAND: features}
+%	\begin{itemize}
+%		\item<1-> Commissioned: \num{2001}
+%		\item<1-> Medium: liquid scintillator
+%			\begin{itemize}
+%				\item<1-> Decay constants: $\tau_1 = \SI{4.0}{\nano\second}$, $\tau_2 = \SI{8.6}{\nano\second}$
+%			\end{itemize}
+%		\item<1-> Size: \SI{1}{\kilo\tonne}
+%		\item<1-> Photomultiplier tubes (Hamamatsu):\\
+%			\begin{itemize}
+%				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time,
+%					\SI{3.5}{\nano\second} TTS
+%				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time,
+%					\SI{5.5}{\nano\second} TTS
+%				\item \SI{34}{\percent} photo-coverage
+%			\end{itemize}
+%		\item<1-> Analysis: $\sim\si{\mega\electronvolt}$ \APnue
+%			(inverse-beta decay)
+%		\item<1-> Energy resolution: \SI{7.0\pm0.1}{\percent}
+%		\item<1-> Vertex resolution:
+%			\SI{13.8\pm2.3}{\centi\meter\per\sqrt{E(\mega\electronvolt)}}
+%		\item<2-> {\color{red}Directional sensitivity: NONE}
+%		\item<3-> {\color{red}No analysis at higher energies}
+%	\end{itemize}
+%\end{frame}
+%
+%\section{Neutrino directionality}
+%\subsection{Issues}
+%\begin{frame}{Directionality in water}
+%	\centering
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Super-Kamiokande}}
+%			\begin{tikzpicture}
+%				\node (img1)
+%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-ring.png}};
+%				\pause
+%				\node (img2) at (img1)
+%				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-lepton.png}};
+%			\end{tikzpicture}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{}
+%			\begin{itemize}
+%				\item<1-> Cherenkov ring
+%				\item<2-> shows charged particle direction
+%				\item<3-> {\color{blue}Can we do something similar in
+%					scintillator?}
+%			\end{itemize}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{In scintillator...}
+%	\centering
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{KamLAND}}
+%			\begin{tikzpicture}
+%				\node (img1)
+%				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-detector.pdf}};
+%				\pause
+%				\node (img2) at (img1)
+%				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-lepton_track.pdf}};
+%				\pause
+%				\node (img3) at (img1)
+%				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-cherenkov.pdf}};
+%				\pause
+%				\node (img4) at (img1)
+%				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-scintillation.pdf}};
+%			\end{tikzpicture}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{}
+%			\begin{itemize}
+%				\item<3-> Cherenkov is emitted
+%				\item<4-> Along with isotropic scintillation
+%				\item<5-> {\color{red}$\implies$ Cannot simply use Cherenkov
+%					for directionality}
+%			\end{itemize}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}[fragile]{Furthermore...}
+%	\centering
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Inverse-beta decay}\\~\\}
+%			\centering
+%			\begin{fmffile}{inverse_beta_decay} \begin{fmfgraph*}(150,120)
+%				\fmfpen{thick}
+%				\fmfleft{i1,i2} \fmfright{o1,o2}
+%				\fmf{fermion,label=\Pproton}{i1,v1}
+%				\fmf{fermion,label=\Pneutron}{v1,o1}
+%				\fmf{fermion,label=\APnue}{i2,v2}
+%				\fmf{fermion,label=\Ppositron}{v2,o2}
+%				\fmf{boson,label=\PWminus}{v1,v2}
+%				\fmfblob{1cm}{v1}
+%			\end{fmfgraph*} \end{fmffile}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{}
+%			\begin{itemize}
+%				\item<2-> KamLAND is used to seeing simple kinematics at low
+%					energies (\si{\mega\electronvolt})
+%				\item<3-> Single final-state lepton
+%			\end{itemize}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}[fragile]{But at higher energies, the kinematics is not so simple}
+%	\centering
+%	\begin{columns}[t]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Resonance production}\\~\\}
+%			\centering
+%			\begin{fmffile}{resonance_production} \begin{fmfgraph*}(120,120)
+%				\fmfpen{thick}
+%				\fmfleft{i1,i2} \fmfright{o1,o2,o3}
+%				\fmf{fermion}{i1,v1}
+%				\fmflabel{\Pproton}{i1}
+%				\fmf{fermion,label=\HepParticle{\Delta}{}{++}}{v1,v3}
+%				\fmf{fermion}{v3,o1}
+%				\fmflabel{\Pproton}{o1}
+%				\fmf{fermion}{v3,o2}
+%				\fmflabel{\Ppiplus}{o2}
+%				\fmf{fermion}{i2,v2,o3}
+%				\fmflabel{\Pnum}{i2}
+%				\fmflabel{\Pmuon}{o3}
+%				\fmf{boson,label=\PWplus}{v1,v2}
+%				\fmfblob{1cm}{v1}
+%			\end{fmfgraph*} \end{fmffile}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{\fontsize{14pt}{14pt}\selectfont{Deep inelastic
+%			scattering}}\\~\\}
+%			\begin{fmffile}{deep_inelastic_scattering} \begin{fmfgraph*}(120,120) \fmfpen{thick}
+%				\fmfleft{i1,i2} \fmfright{o1,o2,o3}
+%                \fmflabel{\Pproton}{i1}
+%                \fmf{plain}{i1,v1}
+%                \fmf{plain,label=\Pup}{v1,v3}
+%                \fmf{phantom}{v1,o1}
+%                \fmflabel{$X$}{o1}
+%                \fmf{plain}{v3,o2}
+%				\fmflabel{\Pup}{o2}
+%                \fmf{fermion}{i2,v2,o3}
+%				\fmflabel{\Pnum}{i2}
+%                \fmflabel{\Pmuon}{o3}
+%                \fmf{boson,label=\PWplus}{v2,v3}
+%                \fmffreeze
+%                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(-0.6,+2))}
+%                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(+0.6,-2))}
+%                \fmffreeze
+%                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(+0.3,+1))}
+%                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(-0.3,-1))}
+%                \fmfblob{1cm}{v1}
+%			\end{fmfgraph*} \end{fmffile}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Many photons at high energy in scintillator}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Cosmic ray $\mu$}}
+%			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Hit time vs angle}}
+%			\begin{tikzpicture}
+%				\node (img1)
+%				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
+%				\pause
+%				\node (img2) at (img1)
+%				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
+%			\end{tikzpicture}
+%			\vspace{-20mm}
+%			\begin{itemize}
+%				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
+%					robust against these statistical outliers}}
+%				\item<4-> {\fontsize{10pt}{10pt}\selectfont{Or we can just use
+%					\textbf{LAPPD}s!}}
+%			\end{itemize}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{There are many problems...}
+%	\begin{itemize}
+%		\item<1-> Light is emitted isotropically
+%		\item<2-> At high energies:
+%		\begin{itemize}
+%			\item<3-> complicated kinematics
+%			\item<3-> multiple final-state particles
+%		\end{itemize}
+%		\item<4-> Many photons $\implies$ pre-pulsing
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Let's change perspective and\\think more simple}
+%	\begin{itemize}
+%		\item<2-> There are two pieces of information arriving at PMTs
+%		\begin{itemize}
+%			\item<3-> {\color{magenta}Charge}
+%			\item<3-> {\color{blue}Time}
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
+%
+%\subsection{Idea}
+%\begin{frame}{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
+%	\centering
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{}
+%			\begin{tikzpicture}
+%				\node (img1)
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time.pdf}};
+%				\pause
+%				\node (img2) at (img1)
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_charge.pdf}};
+%				\pause
+%				\node (img3) at (img1)
+%				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_time.pdf}};
+%			\end{tikzpicture}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{itemize}
+%			\item<2-> Use {\color{magenta}center of charge} to fit middle of
+%				track
+%			\item<3-> Use {\color{blue}center of time} to fit near end of track
+%			\item<4-> And just connect dots to find direction!
+%		\end{itemize}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Question:}
+%	\begin{itemize}
+%		\item<2-> {
+%				But, what do we use for the \underline{weights} in the
+%				\textbf{weighted~mean}:
+%				\begin{equation*}
+%					\frac{\sum_{i} w_{i}x_{i}}{\sum_{i} w_{i}}
+%				\end{equation*}
+%				when calculating center of {\color{magenta}\underline{charge}} and
+%				{\color{blue}\underline{time}}?
+%			}
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Let's review some basic physics...}
+%	
+%\end{frame}
+%
+%\begin{frame}{What weight is used for \emph{center of gravity}?}
+%	\includegraphics[width=\linewidth]{simple_example_of_center_of_gravity.pdf}
+%	\begin{itemize}
+%		\item[]<2-> To find center of gravity:
+%		\item[]<2-> net torque $= -(m_1 g) l_1 + (m_2 g) l_2 = 0$
+%		\item[]<3-> $\implies -(m_1) l_1 + (m_2) l_2 = 0$
+%		\item[]<4-> $\therefore$ weight is \textbf{mass}: $w_{i} = m_{i}$
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{What weight is used for \emph{\color{magenta}center of charge}?}
+%	\includegraphics[width=\linewidth]{simple_example_of_center_of_charge.pdf}
+%	\begin{itemize}
+%		\item[]<2-> $q_1 \propto \frac{1}{l_1^2}, \quad q_2 \propto
+%			\frac{1}{l_2^2}$
+%		\item[]<3-> $\implies \sqrt{q_1} \propto \frac{1}{l_1}, \quad \sqrt{q_2}
+%			\propto \frac{1}{l_2}$
+%		\item[]<4-> $\implies -(\sqrt{q_1}){l_1} + (\sqrt{q_2}){l_2} = 0$
+%		\item[]<5-> $\therefore$ weight is \textbf{$\sqrt{\text{charge}}$}:
+%			$w_{i} = \sqrt{q_{i}}$
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{What weight is used for \emph{\color{blue}center of time}?}
+%	\includegraphics[width=\linewidth]{simple_example_of_center_of_time.pdf}
+%	\begin{itemize}
+%		\item[]<2-> Let $\Delta t_i \equiv t_i - t_0$
+%		\item[]<2-> $\implies \Delta t_1 = \frac{l_1}{c},\quad\Delta t_2 =
+%			\frac{l_2}{c}$
+%		\item[]<3-> $\implies -(\frac{1}{\Delta t_1})\frac{l_1}{c} +
+%			(\frac{1}{\Delta t_2})\frac{l_2}{c} = 0$
+%		\item[]<4-> $\implies -(\frac{1}{\Delta t_1})l_1 +
+%			(\frac{1}{\Delta t_2})l_2 = 0$
+%		\item[]<5-> $\therefore$ weight is \textbf{inverse of time}: $w_{i} =
+%			\frac{1}{\Delta t_{i}}$
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Conclusion}
+%	\begin{itemize}
+%		\item<1-> Use \textbf{mass} as weight for \emph{center of gravity}.
+%		\item<2-> Use \textbf{$\sqrt{\text{charge}}$} as weight for
+%			\emph{\color{magenta}center of charge}.
+%		\item<3-> Use \textbf{$\left(\dfrac{1}{\text{time}}\right)$} as weight
+%			for \emph{\color{blue}center of time}.
+%	\end{itemize}
+%\end{frame}
+%
+%\subsection{Validation}
+%\begin{frame}{Test algorithm against $\mu$ (Data)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{Cosmic ray $\mu$}}
+%			\vspace{5mm}
+%			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{{\fontsize{10pt}{10pt}\selectfont{Agreement
+%			with $\mu$-fitter\\which uses\\entry/exit points\\~}}}}
+%			\includegraphics[width=\linewidth]{analyzed_rtq_run005000_agreementWithMuonFitter_t0Peak_prepulseCut1_0_05maxQThres_1000evts.pdf}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against $\Pnu$ (MC)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} +}}}
+%			\vspace{5mm}
+%			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} +}}}
+%			\vspace{5mm}
+%			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
+%		\end{block}
+%	\end{columns}
+%	\begin{itemize}
+%		\item[] Legend:
+%		\begin{itemize}
+%			\item[] --- \SI{1}{\sigma} of reconstructed angle from \Pnu
+%				direction
+%			\item[] {\color{red}---} \SI{1}{\sigma} of lepton angle from \Pnu
+%				direction
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against T2K events (Data)}
+%	{\small(Selected with spill-time so no backgrounds)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering\small{Map}}
+%			\vspace{10mm}
+%			\includegraphics[width=\linewidth]{t2k.jpeg}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering{\small{Agreement with J-PARC direction}}}
+%			\vspace{10mm}
+%			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\begin{frame}{Test algorithm against T2K events (Data)}
+%	{\small(Selected with spill-time so no backgrounds)}
+%	\begin{columns}[T]
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering\small{Map}}
+%			\vspace{10mm}
+%			\includegraphics[width=\linewidth]{t2k.jpeg}
+%		\end{block}
+%		\column{0.5\linewidth}
+%		\begin{block}{\centering\small{Agreement with MC}}
+%			\vspace{10mm}
+%			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
+%		\end{block}
+%	\end{columns}
+%\end{frame}
+%
+%\section{Track reconstruction and particle discrimination}
+%\begin{frame}
+%	\centering
+%	Track Reconstruction and Particle ID
+%\end{frame}
+%
+%\subsection{Algorithm}
+%\begin{frame}{Hellgartner's algorithm}
+%	{(former LENA grad student)}
+%	\begin{equation*}
+%		h(\vec{x}, t) = \sum_{i=1}^{N_{\text{PMT}}}
+%		\Theta(q_i - q_{\text{threshold}})
+%		\sum_{j=1}^{N_{\gamma}} f(t_{ij} - t_{i}^{\text{TOF}}, t) \,
+%	\end{equation*}
+%	{\footnotesize
+%		$N_{\text{PMT}}$: number of PMTs\\
+%		$N_{\gamma}$: number of photon hits to count per PMT\\
+%		$q_i$: charge on $i$-th PMT, $q_{\text{threshold}}$: minimum charge for
+%		analysis\\
+%		$t_{ij}$: $j$-th hit time on $i$-th PMT\\
+%		$t_i^{\text{TOF}}$: expected time-of-flight between $i$-th PMT and
+%		$\vec{x}$
+%	}
+%	\begin{equation*}
+%		f(\Delta t, t) \propto (t - \Delta t) \exp{\bigg[-\frac{(\Delta t -
+%		t)^2}{2 \sigma_{\text{tts}}}\bigg]}
+%	\end{equation*}
+%	\begin{equation*}
+%		\text{{\normalsize\textbf{\underline{Figure of merit}}} {\footnotesize
+%		for each test point in space}} = \int_{-\infty}^{\infty} |h(\vec{x}, t)|^2 \,\mathrm{d}t
+%	\end{equation*}
+%\end{frame}
+%
+%\subsection{Validation}
+%\begin{frame}{\normalsize Test Hellgartner on double
+%	$\SI{1}{\giga\electronvolt}$ muons (MC)}
+%	\includegraphics[width=\linewidth]{hellgartner_double_muon.pdf}
+%
+%	{\footnotesize Dominikus Hellgartner}
+%\end{frame}
+%
+%\begin{frame}{Test Hellgartner on
+%	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
+%\end{frame}
+
+\begin{frame}{Test Hellgartner on T2K events (Data)}{$E_{\text{reconstructed}} =
+	\SI{363}{\mega\electronvolt}$}
 	\centering
-	\begin{tikzpicture}
-		\node (img1)
-		{\includegraphics[width=\linewidth]{kamland_tunnel.pdf}};
-		\pause
-		\node (img2) at (img1)
-		{\includegraphics[width=\linewidth]{kamland_tunnel-kl_and_sk.pdf}};
-	\end{tikzpicture}
-\end{frame}
-
-\section{Introduction}
-\begin{frame}[t]{KamLAND: features}
-	\begin{itemize}
-		\item<1-> Commissioned: \num{2001}
-		\item<1-> Medium: liquid scintillator
-			\begin{itemize}
-				\item<1-> Decay constants: $\tau_1 = \SI{4.0}{\nano\second}$, $\tau_2 = \SI{8.6}{\nano\second}$
-			\end{itemize}
-		\item<1-> Size: \SI{1}{\kilo\tonne}
-		\item<1-> Photomultiplier tubes (Hamamatsu):\\
-			\begin{itemize}
-				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time,
-					\SI{3.5}{\nano\second} TTS
-				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time,
-					\SI{5.5}{\nano\second} TTS
-				\item \SI{34}{\percent} photo-coverage
-			\end{itemize}
-		\item<1-> Analysis: $\sim\si{\mega\electronvolt}$ \APnue
-			(inverse-beta decay)
-		\item<1-> Energy resolution: \SI{7.0\pm0.1}{\percent}
-		\item<1-> Vertex resolution:
-			\SI{13.8\pm2.3}{\centi\meter\per\sqrt{E(\mega\electronvolt)}}
-		\item<2-> {\color{red}Directional sensitivity: NONE}
-		\item<3-> {\color{red}No analysis at higher energies}
-	\end{itemize}
-\end{frame}
-
-\section{Neutrino directionality}
-\subsection{Issues}
-\begin{frame}{Directionality in water}
-	\centering
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Super-Kamiokande}}
-			\begin{tikzpicture}
-				\node (img1)
-				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-ring.png}};
-				\pause
-				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{sk_cherenkov_ring_with_lepton-lepton.png}};
-			\end{tikzpicture}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{}
-			\begin{itemize}
-				\item<1-> Cherenkov ring
-				\item<2-> shows charged particle direction
-				\item<3-> {\color{blue}Can we do something similar in
-					scintillator?}
-			\end{itemize}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{In scintillator...}
-	\centering
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{KamLAND}}
-			\begin{tikzpicture}
-				\node (img1)
-				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-detector.pdf}};
-				\pause
-				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-lepton_track.pdf}};
-				\pause
-				\node (img3) at (img1)
-				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-cherenkov.pdf}};
-				\pause
-				\node (img4) at (img1)
-				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-scintillation.pdf}};
-			\end{tikzpicture}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{}
-			\begin{itemize}
-				\item<3-> Cherenkov is emitted
-				\item<4-> Along with isotropic scintillation
-				\item<5-> {\color{red}$\implies$ Cannot simply use Cherenkov
-					for directionality}
-			\end{itemize}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Furthermore...}
-	\centering
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Inverse-beta decay}\\~\\}
-			\centering
-			\begin{fmffile}{inverse_beta_decay} \begin{fmfgraph*}(150,120)
-				\fmfpen{thick}
-				\fmfleft{i1,i2} \fmfright{o1,o2}
-				\fmf{fermion,label=\Pproton}{i1,v1}
-				\fmf{fermion,label=\Pneutron}{v1,o1}
-				\fmf{fermion,label=\APnue}{i2,v2}
-				\fmf{fermion,label=\Ppositron}{v2,o2}
-				\fmf{boson,label=\PWminus}{v1,v2}
-				\fmfblob{1cm}{v1}
-			\end{fmfgraph*} \end{fmffile}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{}
-			\begin{itemize}
-				\item<2-> KamLAND is used to seeing simple kinematics at low
-					energies (\si{\mega\electronvolt})
-				\item<3-> Single final-state lepton
-			\end{itemize}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{But at higher energies, the kinematics is not so simple}
-	\centering
-	\begin{columns}[t]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Resonance production}\\~\\}
-			\centering
-			\begin{fmffile}{resonance_production} \begin{fmfgraph*}(120,120)
-				\fmfpen{thick}
-				\fmfleft{i1,i2} \fmfright{o1,o2,o3}
-				\fmf{fermion}{i1,v1}
-				\fmflabel{\Pproton}{i1}
-				\fmf{fermion,label=\HepParticle{\Delta}{}{++}}{v1,v3}
-				\fmf{fermion}{v3,o1}
-				\fmflabel{\Pproton}{o1}
-				\fmf{fermion}{v3,o2}
-				\fmflabel{\Ppiplus}{o2}
-				\fmf{fermion}{i2,v2,o3}
-				\fmflabel{\Pnum}{i2}
-				\fmflabel{\Pmuon}{o3}
-				\fmf{boson,label=\PWplus}{v1,v2}
-				\fmfblob{1cm}{v1}
-			\end{fmfgraph*} \end{fmffile}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{\fontsize{14pt}{14pt}\selectfont{Deep inelastic
-			scattering}}\\~\\}
-			\begin{fmffile}{deep_inelastic_scattering} \begin{fmfgraph*}(120,120) \fmfpen{thick}
-				\fmfleft{i1,i2} \fmfright{o1,o2,o3}
-                \fmflabel{\Pproton}{i1}
-                \fmf{plain}{i1,v1}
-                \fmf{plain,label=\Pup}{v1,v3}
-                \fmf{phantom}{v1,o1}
-                \fmflabel{$X$}{o1}
-                \fmf{plain}{v3,o2}
-				\fmflabel{\Pup}{o2}
-                \fmf{fermion}{i2,v2,o3}
-				\fmflabel{\Pnum}{i2}
-                \fmflabel{\Pmuon}{o3}
-                \fmf{boson,label=\PWplus}{v2,v3}
-                \fmffreeze
-                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(-0.6,+2))}
-                \fmfi{plain}{vpath (__i1,__v1) shifted (thick*(+0.6,-2))}
-                \fmffreeze
-                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(+0.3,+1))}
-                \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(-0.3,-1))}
-                \fmfblob{1cm}{v1}
-			\end{fmfgraph*} \end{fmffile}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Many photons at high energy in scintillator}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Cosmic ray $\mu$}}
-			\includegraphics[width=\linewidth]{through_going_muon.pdf}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Hit time vs angle}}
-			\begin{tikzpicture}
-				\node (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
-				\pause
-				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
-			\end{tikzpicture}
-			\vspace{-20mm}
-			\begin{itemize}
-				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
-					robust against these statistical outliers}}
-				\item<4-> {\fontsize{10pt}{10pt}\selectfont{Or we can just use
-					\textbf{LAPPD}s!}}
-			\end{itemize}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{There are many problems...}
-	\begin{itemize}
-		\item<1-> Light is emitted isotropically
-		\item<2-> At high energies:
-		\begin{itemize}
-			\item<3-> complicated kinematics
-			\item<3-> multiple final-state particles
-		\end{itemize}
-		\item<4-> Many photons $\implies$ pre-pulsing
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Let's change perspective and\\think more simple}
-	\begin{itemize}
-		\item<2-> There are two pieces of information arriving at PMTs
-		\begin{itemize}
-			\item<3-> {\color{magenta}Charge}
-			\item<3-> {\color{blue}Time}
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\subsection{Idea}
-\begin{frame}{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
-	\centering
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{}
-			\begin{tikzpicture}
-				\node (img1)
-				{\includegraphics[width=\linewidth]{center_of_charge_and_time.pdf}};
-				\pause
-				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_charge.pdf}};
-				\pause
-				\node (img3) at (img1)
-				{\includegraphics[width=\linewidth]{center_of_charge_and_time-center_of_time.pdf}};
-			\end{tikzpicture}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{itemize}
-			\item<2-> Use {\color{magenta}center of charge} to fit middle of
-				track
-			\item<3-> Use {\color{blue}center of time} to fit near end of track
-			\item<4-> And just connect dots to find direction!
-		\end{itemize}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Question:}
-	\begin{itemize}
-		\item<2-> {
-				But, what do we use for the \underline{weights} in the
-				\textbf{weighted~mean}:
-				\begin{equation*}
-					\frac{\sum_{i} w_{i}x_{i}}{\sum_{i} w_{i}}
-				\end{equation*}
-				when calculating center of {\color{magenta}\underline{charge}} and
-				{\color{blue}\underline{time}}?
-			}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Let's review some basic physics...}
-	
-\end{frame}
-
-\begin{frame}{What weight is used for \emph{center of gravity}?}
-	\includegraphics[width=\linewidth]{simple_example_of_center_of_gravity.pdf}
-	\begin{itemize}
-		\item[]<2-> To find center of gravity:
-		\item[]<2-> net torque $= -(m_1 g) l_1 + (m_2 g) l_2 = 0$
-		\item[]<3-> $\implies -(m_1) l_1 + (m_2) l_2 = 0$
-		\item[]<4-> $\therefore$ weight is \textbf{mass}: $w_{i} = m_{i}$
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{What weight is used for \emph{\color{magenta}center of charge}?}
-	\includegraphics[width=\linewidth]{simple_example_of_center_of_charge.pdf}
-	\begin{itemize}
-		\item[]<2-> $q_1 \propto \frac{1}{l_1^2}, \quad q_2 \propto
-			\frac{1}{l_2^2}$
-		\item[]<3-> $\implies \sqrt{q_1} \propto \frac{1}{l_1}, \quad \sqrt{q_2}
-			\propto \frac{1}{l_2}$
-		\item[]<4-> $\implies -(\sqrt{q_1}){l_1} + (\sqrt{q_2}){l_2} = 0$
-		\item[]<5-> $\therefore$ weight is \textbf{$\sqrt{\text{charge}}$}:
-			$w_{i} = \sqrt{q_{i}}$
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{What weight is used for \emph{\color{blue}center of time}?}
-	\includegraphics[width=\linewidth]{simple_example_of_center_of_time.pdf}
-	\begin{itemize}
-		\item[]<2-> Let $\Delta t_i \equiv t_i - t_0$
-		\item[]<2-> $\implies \Delta t_1 = \frac{l_1}{c},\quad\Delta t_2 =
-			\frac{l_2}{c}$
-		\item[]<3-> $\implies -(\frac{1}{\Delta t_1})\frac{l_1}{c} +
-			(\frac{1}{\Delta t_2})\frac{l_2}{c} = 0$
-		\item[]<4-> $\implies -(\frac{1}{\Delta t_1})l_1 +
-			(\frac{1}{\Delta t_2})l_2 = 0$
-		\item[]<5-> $\therefore$ weight is \textbf{inverse of time}: $w_{i} =
-			\frac{1}{\Delta t_{i}}$
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Conclusion}
-	\begin{itemize}
-		\item<1-> Use \textbf{mass} as weight for \emph{center of gravity}.
-		\item<2-> Use \textbf{$\sqrt{\text{charge}}$} as weight for
-			\emph{\color{magenta}center of charge}.
-		\item<3-> Use \textbf{$\left(\dfrac{1}{\text{time}}\right)$} as weight
-			for \emph{\color{blue}center of time}.
-	\end{itemize}
-\end{frame}
-
-\subsection{Validation}
-\begin{frame}{Test algorithm against $\mu$ (Data)}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{Cosmic ray $\mu$}}
-			\vspace{5mm}
-			\includegraphics[width=\linewidth]{through_going_muon.pdf}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{{\fontsize{10pt}{10pt}\selectfont{Agreement
-			with $\mu$-fitter\\which uses\\entry/exit points\\~}}}}
-			\includegraphics[width=\linewidth]{analyzed_rtq_run005000_agreementWithMuonFitter_t0Peak_prepulseCut1_0_05maxQThres_1000evts.pdf}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Test algorithm against $\Pnu$ (MC)}
-	\vspace{-10mm}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} +}}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} +}}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
-		\end{block}
-	\end{columns}
-	\begin{itemize}
-		\item Black line: \SI{1}{\sigma} of reconstructed angle from \Pnu
-			direction
-		\item Red line: \SI{1}{\sigma} of lepton angle from \Pnu direction
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Test algorithm against T2K events (Data)}
-	{\small(Selected with spill-time so no backgrounds)}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering\small{Map}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{t2k.jpeg}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering{\small{Agreement with J-PARC direction}}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Test algorithm against T2K events (Data)}
-	{\small(Selected with spill-time so no backgrounds)}
-	\begin{columns}[T]
-		\column{0.5\linewidth}
-		\begin{block}{\centering\small{Map}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{t2k.jpeg}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering\small{Agreement with MC}}
-			\vspace{10mm}
-			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
-		\end{block}
-	\end{columns}
-\end{frame}
-
-\section{Track reconstruction and particle discrimination}
-\begin{frame}
-	\centering
-	Track Reconstruction and Particle ID
-\end{frame}
-
-\subsection{Algorithm}
-\begin{frame}{Hellgartner's algorithm}
-	{(former LENA grad student)}
-	\begin{equation*}
-		h(\vec{x}, t) = \sum_{i=1}^{N_{\text{PMT}}}
-		\Theta(q_i - q_{\text{threshold}})
-		\sum_{j=1}^{N_{\gamma}} f(t_{ij} - t_{i}^{\text{TOF}}, t) \,
-	\end{equation*}
-	{\footnotesize
-		where
-		$N_{\text{PMT}}$: number of PMTs\\
-		$N_{\gamma}$: number of photon hits to count per PMT\\
-		$q_i$: charge on $i$-th PMT, $q_{\text{threshold}}$: minimum charge for
-		analysis\\
-		$t_{ij}$: $j$-th hit time on $i$-th PMT\\
-		$t_i^{\text{TOF}}$: expected time-of-flight between $i$-th PMT and
-		$\vec{x}$
-	}
-	\begin{equation*}
-		f(\Delta t, t) \propto (t - \Delta t) \exp{\bigg[-\frac{(\Delta t -
-		t)^2}{2 \sigma_{\text{tts}}}\bigg]}
-	\end{equation*}
-	\begin{equation*}
-		\text{{\normalsize\textbf{\underline{Figure of merit}}} {\footnotesize
-		for each test point in space}} = \int_{-\infty}^{\infty} |h(\vec{x}, t)|^2 \,\mathrm{d}t
-	\end{equation*}
-\end{frame}
-
-\subsection{Validation}
-\begin{frame}{\normalsize Test Hellgartner on double
-	$\SI{1}{\giga\electronvolt}$ muons (MC)}
-	\includegraphics[width=\linewidth]{hellgartner_double_muon.pdf}
-
-	{\footnotesize Dominikus Hellgartner}
-\end{frame}
-
-\begin{frame}{Test Hellgartner on
-	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
-	\centering
-	\includegraphics[width=0.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
-\end{frame}
-
-\begin{frame}{Test Hellgartner on T2K events (Data)}
-	\centering
-	\includegraphics[width=0.8\linewidth]{fom_map__run11331_evt29962767.pdf}
+	\includegraphics[width=0.8\linewidth]{fom_map__run11339_evt39049330-cleaned.pdf}
 \end{frame}
 
 \begin{frame}{Lepton discrimination algorithm}
@@ -579,6 +582,95 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{Test lepton discrimination (MC)}
 	\centering
 	\includegraphics[width=0.8\linewidth]{emu_mtq_recon_ellipticity-3Mcut.pdf}
+\end{frame}
+
+\begin{frame}
+	Analysis on Dark Matter Search
+\end{frame}
+
+\begin{frame}{Dark matter detection scheme}
+	\vspace{-10mm}
+	\begin{columns}[T]
+		\column{0.5\linewidth}
+		\begin{block}{\centering\small Signal: Dark matter (WIMP) annihilation induced $\Pnu$}
+			\centering
+			\vspace{5mm}
+			\includegraphics[width=\linewidth]{detection_scheme.pdf}
+		\end{block}
+		\column{0.5\linewidth}
+		\begin{block}{\centering\small Background: atmospheric $\Pnu$}
+			\centering
+			\vspace{10mm}
+			\includegraphics[width=\linewidth]{background_model.pdf}
+		\end{block}
+	\end{columns}
+	\centering
+\end{frame}
+
+\begin{frame}
+	\frametitle{Earth Model (PREM)}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\linewidth]{earth_density.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Neutrino Oscillation Parameters}{(normal hierarchy, PDG 2014)}
+	\begin{itemize}
+		\item $\sin^2{(2\theta_{12})} = \num{0.846\pm0.021}$
+		\begin{itemize}
+			\item[] $\implies \theta_{12} = \SI{33.45}{\degree}$
+		\end{itemize}
+		\item $\sin^2{(2\theta_{13})} = \num{9.3\pm0.8e-2}$
+		\begin{itemize}
+			\item[] $\implies \theta_{13} = \SI{8.88}{\degree}$
+		\end{itemize}
+		\item $\sin^2{(2\theta_{23})} = 0.999^{+0.001}_{-0.018}$
+		\begin{itemize}
+			\item[] $\implies \theta_{23} = \SI{44.09}{\degree}$
+		\end{itemize}
+		\item $\Delta m_{21}^2 = \SI{7.53\pm0.18e-5}{\electronvolt\square}$
+		\item $\Delta m_{31}^2 = \SI{2.52\pm0.06e-3}{\electronvolt\square}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\SI{1}{\giga\electronvolt} \Pnue oscillation probability $P(\Pnue
+		\rightarrow \nu_{x})$ from inside Earth to KamLAND}
+	\begin{columns}[T]
+		\column{0.5\linewidth}
+		\begin{block}{\centering$P(\nu_{e} \rightarrow \nu_{e})$}
+			\centering
+			\includegraphics[width=\linewidth]{earth_1_0gev_nue2nue_throughEarth.pdf}
+		\end{block}
+		\column{0.5\linewidth}
+		\begin{block}{\centering$P(\nu_{e} \rightarrow \nu_{\mu})$}
+			\centering
+			\includegraphics[width=\linewidth]{earth_1_0gev_nue2numu_throughEarth.pdf}
+		\end{block}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Dark matter capture in Earth vs mass $m_x$}
+	{(Spin-independent cross-section $\sigma_{\mathrm{SI}} =
+	\SI{1e-40}{\square\centi\meter}$)}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\linewidth]{wimp_capture_rate.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Data Selection}
+	\begin{itemize}
+		%\item Date: ~
+		\item Runs: \numrange{1330}{12475}
+		\item Total Live Time: 3671 days
+		\item Selection Criteria:
+			\begin{itemize}
+				\item Outer detector PMT hits $< 5$ (want fully contained
+					events)
+				\item $E_{\text{reconstructed}} >= \SI{1}{GeV}$
+			\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \end{document} 
