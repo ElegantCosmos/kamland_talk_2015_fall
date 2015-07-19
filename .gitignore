@@ -6,3 +6,7 @@
 *.out
 *.snm
 *.toc
+*.1
+*.mp
+*.t1
+*.vrb
