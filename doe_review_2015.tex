@@ -72,7 +72,7 @@
 %\usecolortheme{wolverine}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
 %\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
@@ -136,7 +136,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-\begin{frame}[t]{KamLAND: $\nu$ detector in Japan}
+\section{Introduction}
+\begin{frame}[t]{KamLAND: \Pnu detector in Japan}
 	\centering
 	\begin{tikzpicture}
 		\node (img1)
@@ -147,29 +148,28 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\end{tikzpicture}
 \end{frame}
 
-\section{Introduction}
+\begin{frame}{KamLAND: \Pnu detector in Japan}
+	\centering
+	\includegraphics[width=\linewidth]{kamland_schematic.png}
+\end{frame}
+
 \begin{frame}[t]{KamLAND: features}
 	\begin{itemize}
 		\item<1-> Commissioned: \num{2001}
 		\item<1-> Medium: liquid scintillator
-			\begin{itemize}
-				\item<1-> Decay constants: $\tau_1 = \SI{4.0}{\nano\second}$, $\tau_2 = \SI{8.6}{\nano\second}$
-			\end{itemize}
 		\item<1-> Size: \SI{1}{\kilo\tonne}
 		\item<1-> Photomultiplier tubes (Hamamatsu):\\
 			\begin{itemize}
-				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time,
-					\SI{3.5}{\nano\second} TTS
-				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time,
-					\SI{5.5}{\nano\second} TTS
-				\item \SI{34}{\percent} photo-coverage
+				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time
+				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time
 			\end{itemize}
-		\item<1-> Analysis: $\sim\si{\mega\electronvolt}$ \APnue
+		\item<1-> Analysis: $\sim\!\si{\mega\electronvolt}$ \APnue
 			(inverse-beta decay)
-		\item<1-> Energy resolution: \SI{7.0\pm0.1}{\percent}
+		\item<1-> Energy resolution:
+			\SI{7.0\pm0.1}{\percent\per\sqrt{E(\mega\electronvolt)}}
 		\item<1-> Vertex resolution:
-			\SI{13.8\pm2.3}{\centi\meter\per\sqrt{E(\mega\electronvolt)}}
-		\item<2-> {\color{red}Directional sensitivity: NONE}
+			\SI{13.8\pm2.3}{\centi\meter}
+		\item<2-> {\color{red}Directional sensitivity: thought to be NONE}
 		\item<3-> {\color{red}No analysis at higher energies}
 	\end{itemize}
 \end{frame}
@@ -253,7 +253,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\begin{block}{}
 			\begin{itemize}
 				\item<2-> KamLAND is used to seeing simple kinematics at low
-					energies (\sim\si{\mega\electronvolt})
+					energies ($\sim\si{\mega\electronvolt}$)
 				\item<3-> Single final-state lepton
 			\end{itemize}
 		\end{block}
@@ -315,18 +315,18 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{columns}[T]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
-			\includegraphics[width=\linewidth]{through_going_muon.pdf}
+			\includegraphics[width=\linewidth]{through_going_muon-with_scintillator.pdf}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering{Hit time vs angle}}
+		\begin{block}{\centering{Hit time vs energy (data)}}
 			\begin{tikzpicture}
 				\node (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all.pdf}};
+				{\includegraphics[width=\linewidth]{muon_prepulsing_example.pdf}};
 				\pause
 				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{analyzed_rtq_atm_muon_run005000_test_hitTimePositions_all-prepulse.pdf}};
+				{\includegraphics[width=\linewidth]{muon_prepulsing_example-prepulsing_text.pdf}};
 			\end{tikzpicture}
-			\vspace{-20mm}
+			\vspace{-10mm}
 			\begin{itemize}
 				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
 					robust against these statistical outliers}}
@@ -337,30 +337,31 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\end{columns}
 \end{frame}
 
-\begin{frame}{There are many problems...}
-	\begin{itemize}
-		\item<1-> Light is emitted isotropically
-		\item<2-> At high energies:
-		\begin{itemize}
-			\item<3-> complicated kinematics
-			\item<3-> multiple final-state particles
-		\end{itemize}
-		\item<4-> Many photons $\implies$ pre-pulsing
-	\end{itemize}
-\end{frame}
+%\begin{frame}{There are many problems...}
+%	\begin{itemize}
+%		\item<1-> Light is emitted isotropically
+%		\item<2-> At high energies:
+%		\begin{itemize}
+%			\item<3-> complicated kinematics
+%			\item<3-> multiple final-state particles
+%		\end{itemize}
+%		\item<4-> Many photons $\implies$ pre-pulsing
+%	\end{itemize}
+%\end{frame}
 
-\begin{frame}{Let's change perspective and\\think more simple}
-	\begin{itemize}
-		\item<2-> There are two pieces of information arriving at PMTs
-		\begin{itemize}
-			\item<3-> {\color{magenta}Charge}
-			\item<3-> {\color{blue}Time}
-		\end{itemize}
-	\end{itemize}
-\end{frame}
+%\begin{frame}{Let's change perspective and\\think more simple}
+%	\begin{itemize}
+%		\item<2-> There are two pieces of information arriving at PMTs
+%		\begin{itemize}
+%			\item<3-> {\color{magenta}Charge}
+%			\item<3-> {\color{blue}Time}
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
 
 \subsection{Idea}
-\begin{frame}{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
+\begin{frame}{Direction reconstruction technique}
+	{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
 	\centering
 	\begin{columns}[T]
 		\column{0.5\linewidth}
@@ -421,12 +422,12 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{What weight is used for \emph{\color{magenta}center of charge}?}
 	\includegraphics[width=\linewidth]{simple_example_of_center_of_charge.pdf}
 	\begin{itemize}
-		\item[]<2-> $q_1 \propto \frac{1}{l_1^2}, \quad q_2 \propto
+		\item[] $q_1 \propto \frac{1}{l_1^2}, \quad q_2 \propto
 			\frac{1}{l_2^2}$
-		\item[]<3-> $\implies \sqrt{q_1} \propto \frac{1}{l_1}, \quad \sqrt{q_2}
+		\item[] $\implies \sqrt{q_1} \propto \frac{1}{l_1}, \quad \sqrt{q_2}
 			\propto \frac{1}{l_2}$
-		\item[]<4-> $\implies -(\sqrt{q_1}){l_1} + (\sqrt{q_2}){l_2} = 0$
-		\item[]<5-> $\therefore$ weight is \textbf{$\sqrt{\text{charge}}$}:
+		\item[] $\implies -(\sqrt{q_1}){l_1} + (\sqrt{q_2}){l_2} = 0$
+		\item[] $\therefore$ weight is \textbf{$\sqrt{\text{charge}}$}:
 			$w_{i} = \sqrt{q_{i}}$
 	\end{itemize}
 \end{frame}
@@ -434,27 +435,27 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{What weight is used for \emph{\color{blue}center of time}?}
 	\includegraphics[width=\linewidth]{simple_example_of_center_of_time.pdf}
 	\begin{itemize}
-		\item[]<2-> Let $\Delta t_i \equiv t_i - t_0$
-		\item[]<2-> $\implies \Delta t_1 = \frac{l_1}{c},\quad\Delta t_2 =
+		\item[] Let $\Delta t_i \equiv t_i - t_0$
+		\item[] $\implies \Delta t_1 = \frac{l_1}{c},\quad\Delta t_2 =
 			\frac{l_2}{c}$
-		\item[]<3-> $\implies -(\frac{1}{\Delta t_1})\frac{l_1}{c} +
+		\item[] $\implies -(\frac{1}{\Delta t_1})\frac{l_1}{c} +
 			(\frac{1}{\Delta t_2})\frac{l_2}{c} = 0$
-		\item[]<4-> $\implies -(\frac{1}{\Delta t_1})l_1 +
+		\item[] $\implies -(\frac{1}{\Delta t_1})l_1 +
 			(\frac{1}{\Delta t_2})l_2 = 0$
-		\item[]<5-> $\therefore$ weight is \textbf{inverse of time}: $w_{i} =
+		\item[] $\therefore$ weight is \textbf{inverse of time}: $w_{i} =
 			\frac{1}{\Delta t_{i}}$
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Conclusion}
-	\begin{itemize}
-		\item<1-> Use \textbf{mass} as weight for \emph{center of gravity}.
-		\item<2-> Use \textbf{$\sqrt{\text{charge}}$} as weight for
-			\emph{\color{magenta}center of charge}.
-		\item<3-> Use \textbf{$\left(\dfrac{1}{\text{time}}\right)$} as weight
-			for \emph{\color{blue}center of time}.
-	\end{itemize}
-\end{frame}
+%\begin{frame}{Conclusion}
+%	\begin{itemize}
+%		\item<1-> Use \textbf{mass} as weight for \emph{center of gravity}.
+%		\item<2-> Use \textbf{$\sqrt{\text{charge}}$} as weight for
+%			\emph{\color{magenta}center of charge}.
+%		\item<3-> Use \textbf{$\left(\dfrac{1}{\text{time}}\right)$} as weight
+%			for \emph{\color{blue}center of time}.
+%	\end{itemize}
+%\end{frame}
 
 \subsection{Validation}
 \begin{frame}{Test algorithm against $\mu$ (Data)}
@@ -462,7 +463,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
 			\vspace{5mm}
-			\includegraphics[width=\linewidth]{through_going_muon-pmt_angle.pdf}
+			\includegraphics[width=\linewidth]{through_going_muon-with_scintillator.pdf}
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{{\fontsize{10pt}{10pt}\selectfont{Agreement
@@ -488,9 +489,9 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{itemize}
 		\item[] Legend:
 		\begin{itemize}
-			\item[] --- \SI{1}{\sigma} of reconstructed angle from \Pnu
+			\item[] {\color{red}---} \SI{1}{\sigma} of reconstructed angle from \Pnu
 				direction
-			\item[] {\color{red}---} \SI{1}{\sigma} of lepton angle from \Pnu
+			\item[] {\color{cyan}---} \SI{1}{\sigma} of lepton angle from \Pnu
 				direction
 		\end{itemize}
 	\end{itemize}
@@ -572,7 +573,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{Test Hellgartner on
 	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
 	\centering
-	\includegraphics[width=0.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
+	\includegraphics[width=1.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
 \end{frame}
 
 \begin{frame}{Test Hellgartner on T2K events (Data)}
@@ -710,14 +711,14 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{itemize}
 		%\item Date: ~
 		%\item Runs: \numrange{1330}{12475}
-		\item Total live time: 3671 days
-		\item Event selection criteria:
+		\item<1-> Live time: 3671 days ($\sim$ 10 years)
+		\item<2-> Event selection criteria:
 			\begin{itemize}
-				\item<2-> Fully contained events
+				\item<3-> Fully contained events
 					\begin{itemize}
-						\item[]<3-> $\implies$ Outer detector PMT hits $< 5$
+						\item[]<4-> $\implies$ Outer detector PMT hits $< 5$
 					\end{itemize}
-				\item<4-> $E_{\text{reconstructed}} > \SI{1}{GeV}$ (predicted by
+				\item<5-> $E_{\text{reconstructed}} > \SI{1}{GeV}$ (predicted by
 					theory)
 			\end{itemize}
 	\end{itemize}
@@ -779,10 +780,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\begin{block}{\centering $\chi^{2}_{T} < 3.32$}
 			\begin{tikzpicture}
 				\node (img1)
-				{\includegraphics[width=\linewidth]{fit_data_to_bkg_model_3_32Chi2TCut.pdf}}
+				{\includegraphics[width=\linewidth]{fit_data_to_bkg_model_3_32Chi2TCut.pdf}};
 				\pause
 				\node (img2) at (img1)
-				{\includegraphics[width=\linewidth]{fit_data_to_bkg_model_3_32Chi2TCut-signal_fit.pdf}}
+				{\includegraphics[width=\linewidth]{fit_data_to_bkg_model_3_32Chi2TCut-signal_fit.pdf}};
 			\end{tikzpicture}
 			\centering
 		\end{block}
@@ -800,6 +801,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\right]
 	\end{equation*}
 	{\scriptsize
+	\begin{equation*}
 		\begin{cases}
 			\Gamma_{A} = \frac{1}{2}\Gamma_{C}
 				& \text{($\chi \overline{\chi}$ annihilation rate at equilibrium)}\\
@@ -813,6 +815,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 				& \text{(effective detector cross-section)}\\
 			R_{\text{Earth}} & \text{(Earth radius)}
 		\end{cases}
+	\end{equation*}
 	}
 
 	\vspace{10mm}
@@ -844,6 +847,38 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}
 	\centering
 	{\huge Thank you for listening!}
+\end{frame}
+
+\begin{frame}
+	\centering
+	{\huge Backup slides}
+\end{frame}
+
+\begin{frame}[t]{KamLAND: features}
+	\begin{itemize}
+		\item Commissioned: \num{2001}
+		\item Medium: liquid scintillator
+			\begin{itemize}
+				\item Decay constants: $\tau_1 = \SI{4.0}{\nano\second}$, $\tau_2 = \SI{8.6}{\nano\second}$
+			\end{itemize}
+		\item Size: \SI{1}{\kilo\tonne}
+		\item Photomultiplier tubes (Hamamatsu):\\
+			\begin{itemize}
+				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time,
+					\SI{3.5}{\nano\second} TTS
+				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time,
+					\SI{5.5}{\nano\second} TTS
+				\item \SI{34}{\percent} photocathode coverage
+			\end{itemize}
+		\item Analysis: $\sim\!\si{\mega\electronvolt}$ \APnue
+			(inverse-beta decay)
+		\item Energy resolution:
+			\SI{7.0\pm0.1}{\percent\per\sqrt{E(\mega\electronvolt)}}
+		\item Vertex resolution:
+			\SI{13.8\pm2.3}{\centi\meter}
+		\item {\color{red}Directional sensitivity: thought to be NONE}
+		\item {\color{red}No analysis at higher energies}
+	\end{itemize}
 \end{frame}
 
 \end{document} 
