@@ -573,22 +573,23 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{Test Hellgartner on
 	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
 	\centering
-	\includegraphics[width=1.8\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
+	\includegraphics[width=0.75\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
 \end{frame}
 
 \begin{frame}{Test Hellgartner on T2K events (Data)}
 	{($E_{\text{reconstructed}} = \SI{363}{\mega\electronvolt}$)}
 	\centering
-	\includegraphics[width=0.8\linewidth]{fom_map__run11339_evt39049330-cleaned.pdf}
+	\includegraphics[width=0.75\linewidth]{fom_map__run11339_evt39049330-cleaned.pdf}
 \end{frame}
 
-\begin{frame}{Lepton discrimination algorithm}
-	Explanation is here.
-\end{frame}
+%\begin{frame}{Lepton discrimination algorithm}
+%	Explanation is here.
+%\end{frame}
 
 \begin{frame}{Test lepton discrimination (MC)}
+	{(Using track ellipticity)}
 	\centering
-	\includegraphics[width=0.8\linewidth]{emu_mtq_recon_ellipticity-3Mcut.pdf}
+	\includegraphics[width=0.6\linewidth]{emu_mtq_recon_ellipticity-3Mcut.pdf}
 \end{frame}
 
 \section{Search for dark matter}
@@ -742,9 +743,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\begin{itemize}
 		\item[] Legend:
 			\begin{itemize}
-				\item[] --- \SI{6.5}{\meter} radius balloon edge
-				\item[] {\color{red}---} \SI{5.2}{\meter} radius fiducial volume
-					cut
+				\item[] {\color{red}\textbf{---}} \SI{5.2}{\meter} radius
+					fiducial volume cut
+				\item[] {\color{cyan}\textbf{---}} \SI{6.5}{\meter} radius
+					balloon edge
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -759,12 +761,18 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}
 	\frametitle{Vertex $\chi^{2}_{\mathrm{time}}$ (test of event point-likeness)}
-	\begin{figure}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\linewidth]{chi2t_vs_radius.pdf}
-		\end{figure}
-	\end{figure}
+	\centering
+	\begin{tikzpicture}
+		\node (img1)
+		{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius.pdf}};
+		\pause
+		\node (img2) at (img1)
+		{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-chi2t_cut.pdf}};
+	\end{tikzpicture}
+	\begin{itemize}
+		\item<2-> Reject events that are too elongated in shape (most likely
+			$\mu$)
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Fit data to background model}{(with $\chi^{2}_{T} < 3.32$ cut)}
@@ -839,8 +847,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\item Studied \textbf{high-energy calibration} using cosmic ray $\Pmu$.
 		\item Placed bounds on \textbf{dark-matter-nucleon cross-sections} by
 			looking at annihilation induced $\Pnu$ from Earth's core.
-		\item \textbf{First physics application} of $\Pnu$ directionality in
-			scintillator.
+		\item One of \textbf{first physics application} of $\Pnu$ directionality
+			in scintillator.
 	\end{itemize}
 \end{frame}
 
