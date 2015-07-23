@@ -178,7 +178,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \subsection{Issues}
 \begin{frame}{Directionality in water}
 	\centering
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Super-Kamiokande}}
 			\begin{tikzpicture}
@@ -203,9 +203,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{In scintillator...}
 	\centering
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{KamLAND}}
+			\vspace{5mm}
 			\begin{tikzpicture}
 				\node (img1)
 				{\includegraphics[width=\linewidth]{kl_fermat_surface_with_lepton-detector.pdf}};
@@ -234,7 +235,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}[fragile]{Furthermore...}
 	\centering
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Inverse-beta decay}\\~\\}
 			\centering
@@ -262,9 +263,11 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}[fragile]{But at higher energies, the kinematics is not so simple}
 	\centering
+	\vspace{-5mm}
 	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Resonance production}\\~\\}
+			\vspace{5mm}
 			\centering
 			\begin{fmffile}{resonance_production} \begin{fmfgraph*}(120,120)
 				\fmfpen{thick}
@@ -286,6 +289,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\fontsize{14pt}{14pt}\selectfont{Deep inelastic
 			scattering}}\\~\\}
+			\vspace{5mm}
 			\begin{fmffile}{deep_inelastic_scattering} \begin{fmfgraph*}(120,120) \fmfpen{thick}
 				\fmfleft{i1,i2} \fmfright{o1,o2,o3}
                 \fmflabel{\Pproton}{i1}
@@ -312,13 +316,13 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}{Many photons at high energy in scintillator}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
 			\includegraphics[width=\linewidth]{through_going_muon-with_scintillator.pdf}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering{Hit time vs energy (data)}}
+		\begin{block}{\centering{\small{Hit time vs energy (data)}}}
 			\begin{tikzpicture}
 				\node (img1)
 				{\includegraphics[width=\linewidth]{muon_prepulsing_example.pdf}};
@@ -359,11 +363,11 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 %	\end{itemize}
 %\end{frame}
 
-\subsection{Idea}
+\subsection{Algorithm}
 \begin{frame}{Direction reconstruction technique}
 	{Fit direction with {\color{magenta}charge} and {\color{blue}time}}
 	\centering
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{}
 			\centering
@@ -459,7 +463,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \subsection{Validation}
 \begin{frame}{Test algorithm against $\mu$ (data)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{Cosmic ray $\mu$}}
 			\vspace{5mm}
@@ -474,7 +478,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}{Test algorithm against $\Pnu$ (MC)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} + {?}}}}
 			\vspace{5mm}
@@ -499,7 +503,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{Test algorithm against T2K events (data)}
 	{\small(Selected with spill-time so no backgrounds)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small{Map}}
 			\vspace{10mm}
@@ -507,7 +511,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{\small{Agreement with J-PARC direction}}}
-			\vspace{10mm}
+			\vspace{4mm}
 			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_noNegativeCharge_prepulseCut_t2kReconDir.pdf}
 		\end{block}
 	\end{columns}
@@ -515,15 +519,16 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{Test algorithm against T2K events (data)}
 	{\small(Selected with spill-time so no backgrounds)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small{Map}}
 			\vspace{10mm}
 			\includegraphics[width=\linewidth]{t2k.jpeg}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering\small{Agreement with MC}}
-			\vspace{10mm}
+		\begin{block}{\centering\small{Agreement with MC}\\
+				\footnotesize{(K-S test: p-value $= 0.96$)}}
+			\vspace{5mm}
 			\includegraphics[width=\linewidth]{analyzed_rtq_t2k_nu_t2kReconDir_hist.pdf}
 		\end{block}
 	\end{columns}
@@ -543,14 +548,16 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\Theta(q_i - q_{\text{threshold}})
 		\sum_{j=1}^{N_{\gamma}} f(t_{ij} - t_{i}^{\text{TOF}}, t) \,
 	\end{equation*}
-	{\footnotesize
-		$N_{\text{PMT}}$: number of PMTs\\
-		$N_{\gamma}$: number of photon hits to count per PMT\\
-		$q_i$: charge on $i$-th PMT, $q_{\text{threshold}}$: minimum charge for
-		analysis\\
-		$t_{ij}$: $j$-th hit time on $i$-th PMT\\
-		$t_i^{\text{TOF}}$: expected time-of-flight between $i$-th PMT and
-		$\vec{x}$
+	\scalebox{0.5}{
+		\begin{cases}
+			N_{\text{PMT}} & \text{(number of PMTs)}\\
+			N_{\gamma} & \text{(number of photon hits to count per PMT)}\\
+			q_i & \text{(charge on $i$-th PMT)}\\
+			q_{\text{threshold}} & \text{(minimum charge for analysis)}\\
+			t_{ij} & \text{($j$-th hit time on $i$-th PMT)}\\
+			t_i^{\text{TOF}} & \text{(expected time-of-flight between $i$-th
+				PMT and $\vec{x}$)}
+		\end{cases}
 	}
 	\begin{equation*}
 		f(\Delta t, t) \propto (t - \Delta t) \exp{\bigg[-\frac{(\Delta t -
@@ -600,7 +607,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 \begin{frame}{Dark matter detection scheme}
 	\vspace{-10mm}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering\small Signal: Dark matter (WIMP) annihilation induced $\Pnu$}
 			\centering
@@ -617,36 +624,10 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\centering
 \end{frame}
 
-\begin{frame}
-	\frametitle{Earth Model (PREM)}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.95\linewidth]{earth_density.pdf}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Neutrino Oscillation Parameters}{(normal hierarchy, PDG 2014)}
-	\begin{itemize}
-		\item $\sin^2{(2\theta_{12})} = \num{0.846\pm0.021}$
-		\begin{itemize}
-			\item[] $\implies \theta_{12} = \SI{33.45}{\degree}$
-		\end{itemize}
-		\item $\sin^2{(2\theta_{13})} = \num{9.3\pm0.8e-2}$
-		\begin{itemize}
-			\item[] $\implies \theta_{13} = \SI{8.88}{\degree}$
-		\end{itemize}
-		\item $\sin^2{(2\theta_{23})} = 0.999^{+0.001}_{-0.018}$
-		\begin{itemize}
-			\item[] $\implies \theta_{23} = \SI{44.09}{\degree}$
-		\end{itemize}
-		\item $\Delta m_{21}^2 = \SI{7.53\pm0.18e-5}{\electronvolt\square}$
-		\item $\Delta m_{31}^2 = \SI{2.52\pm0.06e-3}{\electronvolt\square}$
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\SI{1}{\giga\electronvolt} \Pnue oscillation probability $P(\Pnue
-		\rightarrow \nu_{x})$ from inside Earth to KamLAND}
-	\begin{columns}[T]
+\begin{frame}{\large{\SI{1}{\giga\electronvolt} \Pnue oscillation probability
+	$P(\Pnue \rightarrow \nu_{x})$ from inside Earth to KamLAND}}
+	{(PDG 2014 oscillation parameters, PREM)}
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering$P(\nu_{e} \rightarrow \nu_{e})$}
 			\centering
@@ -660,17 +641,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Dark matter capture in Earth vs mass $m_x$}
-	{(Spin-independent cross-section $\sigma_{\mathrm{SI}} =
-	\SI{1e-40}{\square\centi\meter}$)}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.95\linewidth]{wimp_capture_rate.pdf}
-	\end{figure}
-\end{frame}
-
 \begin{frame}{High energy ($\gtrsim \si{\giga\electronvolt}$) calibration}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering Cosmic ray $\Pmu$ traversing scintillator}
 			\centering
@@ -719,14 +691,14 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 					\begin{itemize}
 						\item[]<4-> $\implies$ Outer detector PMT hits $< 5$
 					\end{itemize}
-				\item<5-> $E_{\text{reconstructed}} > \SI{1}{GeV}$ (predicted by
-					theory)
+				\item<5-> $E_{\text{reconstructed}} > \SI{1}{GeV}$
+					(theoretically preferred)
 			\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Reconstructed Vertex (data)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\begin{block}{\centering$E_{\text{reconstructed}} >
 			\SI{30}{\mega\electronvolt}$}
@@ -752,14 +724,6 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}
-	\frametitle{Fit data to background model}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\linewidth]{fit_data_to_bkg_model_noChi2TCut.pdf}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
 	\frametitle{Vertex $\chi^{2}_{\mathrm{time}}$ (test of event point-likeness)}
 	\centering
 	\begin{tikzpicture}
@@ -770,13 +734,13 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-chi2t_cut.pdf}};
 	\end{tikzpicture}
 	\begin{itemize}
-		\item<2-> Reject events that are too elongated in shape (most likely
-			$\mu$)
+		\item<2-> Reject events above $\chi_{\text{time}}^2 = 3.32$ that are too
+			elongated in shape (most likely $\mu$)
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Fit data to background model}{(with $\chi^{2}_{T} < 3.32$ cut)}
-	\begin{columns}[T]
+	\begin{columns}[t]
 		\column{0.5\linewidth}
 		\centering
 		\begin{block}{\centering No $\chi^{2}_{T}$ cut}
@@ -798,7 +762,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Event rate equation}
+\begin{frame}{Signal event rate equation}
 	\begin{equation*}
 		\text{rate}_{\text{signal}} = \Gamma_{\text{A}} \times
 		\sum\limits_{\substack{\text{channel} = i\\ \nu-\text{flavor}= \alpha}}
@@ -825,13 +789,12 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\end{cases}
 	\end{equation*}
 	}
-
-	\vspace{10mm}
 	bound on $\text{rate}_{\text{signal}}$
 	$\implies$ bound on $\sigma_{\chi-\mathrm{nucleon}}$
 \end{frame}
 
-\begin{frame}{WIMP $\sigma_{\mathrm{SI}}$ bounds}{(\SI{90}{\percent} C.L.)}
+\begin{frame}{WIMP $\sigma_{\mathrm{SI}}$ bounds (preliminary)}
+	{(\SI{90}{\percent} C.L.)}
 	\begin{figure}
 		\centering
 		\includegraphics[width=\linewidth]{dmXSec_vs_log10mx.pdf}
@@ -846,7 +809,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			scintillator.
 		\item Studied \textbf{high-energy calibration} using cosmic ray $\Pmu$.
 		\item Placed bounds on \textbf{dark-matter-nucleon cross-sections} by
-			looking at annihilation induced $\Pnu$ from Earth's core.
+			looking at annihilation induced $\Pnu$ from Earth's core
+			(preliminary).
 		\item One of \textbf{first physics application} of $\Pnu$ directionality
 			in scintillator.
 	\end{itemize}
@@ -887,6 +851,50 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\item {\color{red}Directional sensitivity: thought to be NONE}
 		\item {\color{red}No analysis at higher energies}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Earth Model (PREM)}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\linewidth]{earth_density.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Neutrino Oscillation Parameters}{(normal hierarchy, PDG 2014)}
+	\begin{itemize}
+		\item $\sin^2{(2\theta_{12})} = \num{0.846\pm0.021}$
+		\begin{itemize}
+			\item[] $\implies \theta_{12} = \SI{33.45}{\degree}$
+		\end{itemize}
+		\item $\sin^2{(2\theta_{13})} = \num{9.3\pm0.8e-2}$
+		\begin{itemize}
+			\item[] $\implies \theta_{13} = \SI{8.88}{\degree}$
+		\end{itemize}
+		\item $\sin^2{(2\theta_{23})} = 0.999^{+0.001}_{-0.018}$
+		\begin{itemize}
+			\item[] $\implies \theta_{23} = \SI{44.09}{\degree}$
+		\end{itemize}
+		\item $\Delta m_{21}^2 = \SI{7.53\pm0.18e-5}{\electronvolt\square}$
+		\item $\Delta m_{31}^2 = \SI{2.52\pm0.06e-3}{\electronvolt\square}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Dark matter capture in Earth vs mass $m_x$}
+	{(Spin-independent cross-section $\sigma_{\mathrm{SI}} =
+	\SI{1e-40}{\square\centi\meter}$)}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\linewidth]{wimp_capture_rate.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Fit data to background model}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{fit_data_to_bkg_model_noChi2TCut.pdf}
+	\end{figure}
 \end{frame}
 
 \end{document} 
