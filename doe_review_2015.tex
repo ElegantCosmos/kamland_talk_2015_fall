@@ -78,6 +78,7 @@
 }
 
 \usepackage{color} % colored text
+\usepackage{amsmath,mathtools}
 %\usepackage{graphicx} % Allows including images
 %\usepackage{grffile}
 %\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
@@ -549,6 +550,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\sum_{j=1}^{N_{\gamma}} f(t_{ij} - t_{i}^{\text{TOF}}, t) \,
 	\end{equation*}
 	\scalebox{0.5}{
+	$
 		\begin{cases}
 			N_{\text{PMT}} & \text{(number of PMTs)}\\
 			N_{\gamma} & \text{(number of photon hits to count per PMT)}\\
@@ -558,6 +560,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			t_i^{\text{TOF}} & \text{(expected time-of-flight between $i$-th
 				PMT and $\vec{x}$)}
 		\end{cases}
+		$
 	}
 	\begin{equation*}
 		f(\Delta t, t) \propto (t - \Delta t) \exp{\bigg[-\frac{(\Delta t -
