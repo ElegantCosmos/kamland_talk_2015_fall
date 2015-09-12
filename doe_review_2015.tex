@@ -72,7 +72,7 @@
 %\usecolortheme{wolverine}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-\setbeamertemplate{footline}[frame number] % To replace the footer line in all slides with a simple slide count uncomment this line
+\setbeamertemplate{footline}[frame number]{} % To replace the footer line in all slides with a simple slide count uncomment this line
 
 \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
@@ -482,12 +482,12 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{Test algorithm against $\Pnu$ (MC)}
 	\begin{columns}[t]
 		\column{0.5\linewidth}
-		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} + {?}}}}
+		\begin{block}{\centering{\ce{{\Pnue} + ^{1}H ->[CC] {\Pelectron} + {(?)}}}}
 			\vspace{5mm}
-			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H2_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
+			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_H1_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
 		\column{0.5\linewidth}
-		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} + {?}}}}
+		\begin{block}{\centering{\ce{{\Pnue} + ^{12}C ->[CC] {\Pelectron} + {(?)}}}}
 			\vspace{5mm}
 			\includegraphics[width=\linewidth]{analyzed_mtq_flatSpectrum_nue_C12_outerBufferFillAll_reconDirAgreementWithMtqTruthVectorVSEnergy_onlyCC_maxR600cm.pdf}
 		\end{block}
@@ -585,6 +585,11 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	$\SI{2}{\giga\electronvolt}$ \Pnue (MC)}
 	\centering
 	\includegraphics[width=0.75\linewidth]{hellgartner_reconstruction_2gev_nue_klg4sim.pdf}
+\end{frame}
+
+\begin{frame}{Test Hellgartner on T2K events (data)}
+	\centering
+	\includegraphics[width=0.75\linewidth]{fom_map__run11268_evt28729171-cleaned.pdf}
 \end{frame}
 
 \begin{frame}{Test Hellgartner on T2K events (data)}
@@ -704,16 +709,18 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}{Reconstructed Vertex (data)}
 	\begin{columns}[t]
 		\column{0.5\linewidth}
-		\begin{block}{\centering$E_{\text{reconstructed}} >
-			\SI{30}{\mega\electronvolt}$}
-			\centering
-			\includegraphics[width=\linewidth]{kat_vertex_min30mev.pdf}
-		\end{block}
-		\column{0.5\linewidth}
-		\begin{block}{\centering$E_{\text{reconstructed}} >
+		\begin{block}{\centering$E_{\text{low}} >
 			\SI{1}{\giga\electronvolt}$}
 			\centering
-			\includegraphics[width=\linewidth]{kat_vertex_min1gev.pdf}
+			%\includegraphics[width=\linewidth]{kat_vertex_min1gev.pdf}
+			\includegraphics[width=\linewidth]{kat_vertex_min1gev_lowEnergyRecon.pdf}
+		\end{block}
+		\column{0.5\linewidth}
+		\begin{block}{\centering$E_{\text{high}} >
+			\SI{1}{\giga\electronvolt}$}
+			\centering
+			%\includegraphics[width=\linewidth]{kat_vertex_min1gev.pdf}
+			\includegraphics[width=\linewidth]{kat_vertex_min1gev_highEnergyRecon.pdf}
 		\end{block}
 	\end{columns}
 	\begin{itemize}
@@ -730,17 +737,23 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \begin{frame}
 	\frametitle{Vertex $\chi^{2}_{\mathrm{time}}$ (test of event point-likeness)}
 	\centering
-	\begin{tikzpicture}
-		\node (img1)
-		{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius.pdf}};
-		\pause
-		\node (img2) at (img1)
-		{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-chi2t_cut.pdf}};
-	\end{tikzpicture}
+	\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-highEnergyRecon.pdf}
+	%\begin{tikzpicture}
+	%	\node (img1)
+	%	{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius.pdf}};
+	%	\pause
+	%	\node (img2) at (img1)
+	%	{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-chi2t_cut.pdf}};
+	%\end{tikzpicture}
 	\begin{itemize}
 		\item<2-> Reject events above $\chi_{\text{time}}^2 = 3.32$ that are too
 			elongated in shape (most likely $\mu$)
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Reconstructed energy}
+	\centering
+	\includegraphics[width=0.7\linewidth]{reconstructed_energy_plot.pdf}
 \end{frame}
 
 \begin{frame}{Fit data to background model}{(with $\chi^{2}_{T} < 3.32$ cut)}
