@@ -115,7 +115,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 \textit{michinar@hawaii.edu} % Your email address
 }
 %\date{\today} % Date, can be changed to a custom date
-\date{July 23, 2015}
+\date{September 16, 2015}
 
 \begin{document}
 
@@ -138,41 +138,54 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-\section{Introduction}
-\begin{frame}[t]{KamLAND: \Pnu detector in Japan}
-	\centering
-	\begin{tikzpicture}
-		\node (img1)
-		{\includegraphics[width=\linewidth]{kamland_tunnel.pdf}};
-		\pause
-		\node (img2) at (img1)
-		{\includegraphics[width=\linewidth]{kamland_tunnel-kl_and_sk.pdf}};
-	\end{tikzpicture}
-\end{frame}
+\section{Motivation}
+%\begin{frame}[t]{KamLAND: \Pnu detector in Japan}
+%	\centering
+%	\begin{tikzpicture}
+%		\node (img1)
+%		{\includegraphics[width=\linewidth]{kamland_tunnel.pdf}};
+%		\pause
+%		\node (img2) at (img1)
+%		{\includegraphics[width=\linewidth]{kamland_tunnel-kl_and_sk.pdf}};
+%	\end{tikzpicture}
+%\end{frame}
+%
+%\begin{frame}{KamLAND: \Pnu detector in Japan}
+%	\centering
+%	\includegraphics[width=\linewidth]{kamland_schematic.png}
+%\end{frame}
 
-\begin{frame}{KamLAND: \Pnu detector in Japan}
-	\centering
-	\includegraphics[width=\linewidth]{kamland_schematic.png}
-\end{frame}
+%\begin{frame}[t]{KamLAND: features}
+%	\begin{itemize}
+%		\item<1-> Commissioned: \num{2001}
+%		\item<1-> Medium: liquid scintillator
+%		\item<1-> Size: \SI{1}{\kilo\tonne}
+%		\item<1-> Photomultiplier tubes (Hamamatsu):\\
+%			\begin{itemize}
+%				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time
+%				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time
+%			\end{itemize}
+%		\item<1-> Analysis: $\sim\!\si{\mega\electronvolt}$ \APnue
+%			(inverse-beta decay)
+%		\item<1-> Energy resolution:
+%			\SI{7.0\pm0.1}{\percent\per\sqrt{E(\mega\electronvolt)}}
+%		\item<1-> Vertex resolution:
+%			\SI{13.8\pm2.3}{\centi\meter}
+%		\item<2-> {\color{red}Directional sensitivity: thought to be NONE}
+%		\item<3-> {\color{red}No analysis at higher energies}
+%	\end{itemize}
+%\end{frame}
 
-\begin{frame}[t]{KamLAND: features}
+\begin{frame}{Motivation}
 	\begin{itemize}
-		\item<1-> Commissioned: \num{2001}
-		\item<1-> Medium: liquid scintillator
-		\item<1-> Size: \SI{1}{\kilo\tonne}
-		\item<1-> Photomultiplier tubes (Hamamatsu):\\
+		\item<1-> Past analysis in KamLAND:\\
 			\begin{itemize}
-				\item \num{1325} 17-inch, \SI{7}{\nano\second} rise-time
-				\item \num{779} 20-inch, \SI{10}{\nano\second} rise-time
+				\item[] mainly $\sim\!\si{\mega\electronvolt}$ \APnue (inverse-beta decay)
 			\end{itemize}
-		\item<1-> Analysis: $\sim\!\si{\mega\electronvolt}$ \APnue
-			(inverse-beta decay)
-		\item<1-> Energy resolution:
-			\SI{7.0\pm0.1}{\percent\per\sqrt{E(\mega\electronvolt)}}
-		\item<1-> Vertex resolution:
-			\SI{13.8\pm2.3}{\centi\meter}
-		\item<2-> {\color{red}Directional sensitivity: thought to be NONE}
-		\item<3-> {\color{red}No analysis at higher energies}
+		\item<2-> {\color{red}No analysis at higher
+			$\sim\!\si{\giga\electronvolt}$ energies}
+		\item<3-> {\color{red}Can we do \Pnu directionality?}
+		\item<4-> {\color{red}Can we do \Pnu flavor discrimination?}
 	\end{itemize}
 \end{frame}
 
@@ -336,8 +349,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 			\begin{itemize}
 				\item<3-> {\fontsize{10pt}{10pt}\selectfont{Fitters must to be
 					robust against these statistical outliers}}
-				\item<4-> {\fontsize{10pt}{10pt}\selectfont{Or we can just use
-					\textbf{LAPPD}s!}}
+				%\item<4-> {\fontsize{10pt}{10pt}\selectfont{Or we can just use
+				%	\textbf{LAPPD}s!}}
 			\end{itemize}
 		\end{block}
 	\end{columns}
@@ -473,7 +486,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 		\end{block}
 		\column{0.5\linewidth}
 		\begin{block}{\centering{{\fontsize{10pt}{10pt}\selectfont{Agreement
-			with $\mu$-fitter\\which uses\\entry/exit points\\~}}}}
+			with KamLAND $\mu$-fitter\\~}}}}
 			\includegraphics[width=\linewidth]{analyzed_rtq_run005000_agreementWithMuonFitter_t0Peak_prepulseCut1_0_05maxQThres_1000evts.pdf}
 		\end{block}
 	\end{columns}
@@ -592,8 +605,7 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\includegraphics[width=0.75\linewidth]{fom_map__run11268_evt28729171-cleaned.pdf}
 \end{frame}
 
-\begin{frame}{Test Hellgartner on T2K events (data)}
-	{($E_{\text{reconstructed}} = \SI{363}{\mega\electronvolt}$)}
+\begin{frame}{Test Hellgartner on T2K events (data)} {($E_{\text{reconstructed}} = \SI{363}{\mega\electronvolt}$)}
 	\centering
 	\includegraphics[width=0.75\linewidth]{fom_map__run11339_evt39049330-cleaned.pdf}
 \end{frame}
@@ -674,6 +686,17 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	\end{columns}
 \end{frame}
 
+\begin{frame}{High energy ($\gtrsim \si{\giga\electronvolt}$) calibration}
+	{
+		pe/MeV of scintillator, and comparison to Kat energy fitter\\
+		$E_{\text{high}}$: high energy reconstruction\\
+		$E_{\text{low}}$: Kat energy
+	}
+	\centering
+	\includegraphics[width=0.8\linewidth]{scintID_corrected_allRuns.pdf}\\
+	\includegraphics[width=0.8\linewidth]{high_vs_low_energy_recon_energy.pdf}
+\end{frame}
+
 \begin{frame}{Fit $\der{E}{x}$ for \Pmu in scintillator (MC)}
 	\centering
 	\begin{tikzpicture}
@@ -746,8 +769,8 @@ University of Hawaii, Manoa \\ % Your institution for the title page
 	%	{\includegraphics[width=0.8\linewidth]{chi2t_vs_radius-chi2t_cut.pdf}};
 	%\end{tikzpicture}
 	\begin{itemize}
-		\item<2-> Reject events above $\chi_{\text{time}}^2 = 3.32$ that are too
-			elongated in shape (most likely $\mu$)
+		\item<2-> Reject events with $\chi_{\text{time}}^2 \geq 40$ that
+			are too elongated in shape (most likely $\mu$)
 	\end{itemize}
 \end{frame}
 
